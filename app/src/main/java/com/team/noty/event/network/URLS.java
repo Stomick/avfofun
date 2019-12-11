@@ -11,7 +11,7 @@ public final class URLS {
     public static final String Login = "user/login";
     public static final String LoginWithSoc = "getauth";
     public static final String RegWithSoc = "setauth";
-    public static final String Profile = "profile";
+    public static final String Profile = "user/profile";
     public static final String Create = "add{x}";
     public static final String Cities = "city/list";
     public static final String EditProfile = "user/editprofile";
@@ -28,7 +28,7 @@ public final class URLS {
     public static final String GetNotification = "getnotification";
     public static final String SetNotification = "setnotification";
     public static final String DeleteEvent = "deleteevent";
-    public static final String SetFBToken = "setnotytoken";
+    public static final String SetFBToken = "user/setnotytoken";
     public static final String SetUserStatus = "setuserstatus";
     public static final String GetAdminUserList = "getadminuserlist";
     public static final String SetSoc = "setsnid";

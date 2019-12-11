@@ -44,8 +44,8 @@ public class UpdatePhotoInteractor implements Interactor<Completable, UpdatePhot
     }
 
     private Completable setAvatar(RsProfile profile) {
-        return Single.zip(Single.just(profile.account.userAvatar),
-                localRepository.request(profile.account.user_id),
+        return Single.zip(Single.just(profile.answer.userAvatar),
+                localRepository.request(profile.answer.user_id),
                 (t1, t2) -> {
                     t2.imageUrl = t1;
                     return t2;

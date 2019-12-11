@@ -64,7 +64,7 @@ public class UserReader implements ReaderRepos<User, Integer> {
         }
 
     private User fromApi(RsProfile profile) {
-        RsProfile.Account account = profile.account;
+        RsProfile.Account account = profile.answer;
         User user = new User();
         if(account != null) {
             user.categories = account.userCategories == null ? new ArrayList<>() : account.userCategories;

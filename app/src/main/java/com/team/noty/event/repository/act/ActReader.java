@@ -38,7 +38,7 @@ public class ActReader implements ReaderRepos<Act, ActId> {
 
     private Observable<RsAct> requestSelect(ActId actId) {
         return actId.isEvent
-                ? api.event(actId.id).map(rsGetEvent -> rsGetEvent.event)
+                ? api.event(actId.id).map(rsGetEvent -> rsGetEvent.answer)
                 : api.community(actId.id).map(rsGetComm -> rsGetComm.community);
     }
 

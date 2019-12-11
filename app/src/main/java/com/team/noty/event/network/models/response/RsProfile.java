@@ -6,7 +6,7 @@ import java.util.List;
 
 public class RsProfile extends RsBase {
 
-    public Account account;
+    public Account answer;
 
     public class Account{
         public int user_id;

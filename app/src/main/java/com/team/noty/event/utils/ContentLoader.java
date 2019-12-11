@@ -38,7 +38,7 @@ public class ContentLoader {
     }
 
     public static Observable<UiComment> setUser(UiComment comment, Observable<RsProfile> observable) {
-        return Observable.zip(Observable.just(comment), observable.map(rsProfile -> rsProfile.account), (comment1, account) -> {
+        return Observable.zip(Observable.just(comment), observable.map(rsProfile -> rsProfile.answer), (comment1, account) -> {
             comment1.userName = account.username;
             comment1.userPhotoUrl = account.userAvatar;
             return comment1;
@@ -47,13 +47,13 @@ public class ContentLoader {
 
     public static Observable<UiUser> loadUiUser(Observable<RsProfile> observable) {
         return observable
-                .map(rsProfile -> rsProfile.account)
+                .map(rsProfile -> rsProfile.answer)
                 .map(Converter::toUi);
     }
 
     public static Observable<UiUser> loadUser(MainApi api, String id) {
         return api.profile(id)
-                .map(rsProfile -> rsProfile.account)
+                .map(rsProfile -> rsProfile.answer)
                 .map(Converter::toDB)
                 .map(Converter::toUi);
     }
@@ -82,7 +82,7 @@ public class ContentLoader {
     private static Single<List<ActId>> loadUserEventCommIds(MainApi api, String userId) {
         return api.profile(userId)
                 .singleOrError()
-                .map(profile -> mergeIds(profile.account.communities, profile.account.events));
+                .map(profile -> mergeIds(profile.answer.communities, profile.answer.events));
     }
 
     private static List<ActId> mergeIds(List<String> comm, List<String> event) {
