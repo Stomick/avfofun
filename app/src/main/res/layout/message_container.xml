@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="13dp">
+
+    <TextView
+        android:id="@+id/message_separstor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="18dp"
+        android:paddingTop="5dp"
+        android:text="@string/any_time"
+        android:textColor="@color/small_title_text"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/message_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/small_title_text"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/message_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" />
+</LinearLayout>

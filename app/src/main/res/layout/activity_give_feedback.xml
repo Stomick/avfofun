@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/last_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/give_image"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_input_photo" />
+
+            <TextView
+                android:id="@+id/give_title"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:background="@color/black_p50"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:paddingStart="18dp"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                tools:ignore="RtlSymmetry" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/give_creator_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/creator"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <include
+                android:id="@+id/give_creator"
+                layout="@layout/part_item" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingLeft="19dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/give_mark_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/mark"
+                android:textColor="@android:color/black" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+
+                android:id="@+id/give_mark_field"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1"
+                app:mrb_fillBackgroundStars="true"
+                app:mrb_progressBackgroundTint="@android:color/darker_gray"
+                app:mrb_progressTint="@android:color/black"
+                app:mrb_secondaryProgressTint="@android:color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/under_line"
+                android:background="@color/under_line" />
+
+            <TextView
+                android:id="@+id/give_comm_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/comment"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/give_description_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/feed_back_tint"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/give_button"
+            style="@style/AppTheme.BigButton.BG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/publish_review" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">Event</string>
+    <string name="intro_title">Шкипер\nНайди своих</string>
+    <string name="registration">Регистрация</string>
+    <string name="enter">Войти</string>
+    <string name="entrance">Вход</string>
+    <string name="or">или</string>
+    <string name="without_registration">Попробовать без регистрации</string>
+    <string name="have_acc">У меня уже есть аккаунт</string>
+    <string name="resume_vk">Продолжить с VK</string>
+    <string name="resume_fb">Продолжить с FB</string>
+    <string name="on_registration">Зарегистрируйтесь</string>
+    <string name="error_login">Неверный логин или пароль!</string>
+    <string-array name="reg_prew_title">
+        <item>Ваши интересы</item>
+        <item>Загрузите Ваше фото</item>
+        <item>Расскажите немного о себе</item>
+        <item>Не ждите, а действуйте!</item>
+    </string-array>
+    <string-array name="reg_prew_message">
+        <item>Каждый день вокруг вас происходят сотни событий. Выберите наиболее интересующие вас</item>
+        <item>Это повысит к Вам доверие</item>
+        <item>Напишите здесь пару строк.\nЭто поможет найти\nблизкого по духу!</item>
+        <item>Найдите или создайте свое\nпервое событие прямо сейчас</item>
+    </string-array>
+    <string name="next">Далее</string>
+    <string name="find_company">Найти компанию</string>
+    <string name="create_event">Создать событие</string>
+    <string name="you_gender">Ваш пол:</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="input_first_name">Введите имя</string>
+    <string name="input_last_name">Введите фамилию</string>
+    <string name="birth_date">Дата рождения</string>
+    <string name="mail_password_mail">Введите адрес Вашей почты</string>
+    <string name="enter_mail">Введите почту</string>
+    <string name="input_password">Введите пароль</string>
+    <string name="mail_password_password_again">Введите пароль еще раз</string>
+    <string name="input_number_phone">Ввод номера телефона</string>
+    <string name="you_mail_and_password">Ваша почта и пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="phone_bot_title">На указанный номер телефона будет отправлено сообщение с кодом подтверждения</string>
+    <string name="restore_access">Востановление доступа</string>
+    <string name="access_code">Код подтверждения</string>
+    <string name="we_send_you_code">Мы отправили Вам код подтверждение\nна указаный номер</string>
+    <string name="dont_have_code">Не получили код?</string>
+    <string name="mail_bot_title">На указанный адрес будет отправлено письмо\nс ссылкой подтверждения</string>
+    <string name="anons_evens">Анонс ближайших событий</string>
+    <string name="interests">Интересы</string>
+    <string name="input_message">Введите сообщение</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_favorite">События</string>
+    <string name="title_add">Создать</string>
+    <string name="title_notifications">Сообщения</string>
+    <string name="title_profile">Кабинет</string>
+    <string name="my_event_n">Мои события (%1$d)</string>
+    <string name="part_template">Участник(%1$d)</string>
+    <string name="creator_template">Организатор(%1$d)</string>
+    <string name="my_communities_n">Мои сообщества (%1$d)</string>
+    <string name="you_dont_have_event">У вас нет ни одного события</string>
+    <string name="you_dont_have_communities">Вы пока не состоите ни в одном сообществе</string>
+    <string name="add_his_now">Добавьте его прямо сейчас!</string>
+    <string name="favorite_spinner_title">Мои события и сообщества</string>
+    <string name="voice_left_cancel">Влево - отмена</string>
+    <string-array name="favorite_spinner">
+        <item>Все события</item>
+        <item>Организатор</item>
+        <item>Участник</item>
+    </string-array>
+    <string name="notification_spinner_title">Мои уведомления</string>
+    <string-array name="notification_spinner">
+        <item>Все уведомления</item>
+        <item>Сообщения</item>
+        <item>Системные оповещения</item>
+        <item>Новые события</item>
+    </string-array>
+    <string name="cancel">Отмена</string>
+    <string name="exit">Выход</string>
+    <string name="ok">Ок</string>
+    <string name="event">Событие</string>
+    <string name="community">Сообщество</string>
+    <string name="create_community_event">Создать событие/сообщество</string>
+    <string name="title_event">Заголовок события</string>
+    <string name="name_community">Название сообщества</string>
+    <string name="chose_category">Выберите категорию</string>
+    <string name="max_parts">Максимальное количество участников</string>
+    <string name="chose_day_visits">Выберите дни посещения</string>
+    <string name="chose_time_begin">Выберите время(начало)</string>
+    <string name="chose_time_end">Выберите время(конец)</string>
+    <string name="chose_date">Выберите дату</string>
+    <string name="chose_time">Выберите время</string>
+    <string name="chose_location">Выберите место проведения</string>
+    <string name="set_price">Укажите цену в рублях(если есть)</string>
+    <string name="age_limit">Возрастное ограничение</string>
+    <string name="moderation_parts">Модерация участников</string>
+    <string name="publish_an_event">Опубликовать событие</string>
+    <string name="publish_an_community">Опубликовать сообщество</string>
+    <string name="add_more_details">Добавить больше деталей</string>
+    <string-array name="age_limits">
+        <item>Без ограничений</item>
+        <item>12+</item>
+        <item>16+</item>
+        <item>18+</item>
+        <item>21+</item>
+    </string-array>
+    <string-array name="days_of_week">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Воскресенье</item>
+    </string-array>
+    <string-array name="days_of_week_short">
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+        <item>Вс</item>
+    </string-array>
+    <string name="cabinet_title">Личный кабинет</string>
+    <string name="my_phone">Номер телефона: </string>
+    <string name="my_interests">Мои интересы</string>
+    <string name="about_me">О себе:</string>
+    <string name="my_event">Мои события</string>
+    <string name="my_community">Мои сообщества</string>
+    <string name="my_comments">Отзывы пользователей</string>
+    <string name="look">Смотреть</string>
+
+
+    <string name="edit">Редактирование</string>
+    <string name="save">Сохранить</string>
+    <string name="city">Город</string>
+    <string name="exiting_account">Выход из учетной записи</string>
+    <string name="firstname">Имя</string>
+    <string name="lastname">Фамилия</string>
+    <string name="phone">Номер телефона</string>
+    <string name="mail">Почта</string>
+    <string name="my_soc">Мои соц. сети</string>
+    <string name="app_feedback">Оставить отзыв о приложении</string>
+    <string name="event_feedback">Оставить отзыв</string>
+    <string name="change_password">Сменить пароль</string>
+    <string name="privacy_settings">Настройки приватности</string>
+    <string name="send_notifications_mail">Присылать уведомления по почте</string>
+    <string name="share_with_event">Открыть доступ к моим событиям</string>
+    <string name="share_with_community">Открыть доступ к моим сообществам</string>
+    <string name="do_change_password">Смена пароля</string>
+    <string name="input_new_password">Введите новый пароль</string>
+    <string name="input_old_password">Введите старый пароль</string>
+    <string name="question_exit_account">Вы действительно хотите выйти из учетной записи</string>
+    <string name="title_activity_maps">Мое местоположение</string>
+    <string name="adress_map">Уточните адрес</string>
+    <string name="input_city">Укажите город</string>
+    <string name="registration_date">ДД.ММ.ГГГГ</string>
+    <string name="error">Ошибка!</string>
+    <string name="must_filled">Необходимо заполнить!</string>
+    <string name="photo">Фотография</string>
+    <string name="load_from_gallery">Загрузить из галереи</string>
+    <string name="take_picture">Сделать снимок</string>
+    <string name="open">Открыть</string>
+    <string name="delete">Удалить</string>
+    <string name="user_deleted">Пользователь удален</string>
+    <string name="apply">Применить</string>
+    <string name="reset_filter">Сбросить фильтры</string>
+    <string name="any_date">Любая дата</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="any_time">Любое время</string>
+    <string name="age_parts">Возраст участников</string>
+    <string name="any_age">Любой возраст</string>
+    <string name="count_parts">Количество участников</string>
+    <string name="enter_max_count">Введите максимальное количество</string>
+    <string name="enter_price_to">Введите цену</string>
+    <string name="sort_by">Сортировать по</string>
+    <string name="without_sort">Без сортировки</string>
+    <string name="price">Цена</string>
+    <string name="fill_field">Заполните поле!</string>
+    <string name="incorrect">Неверно заполнено!</string>
+    <string name="select_date">Выберете дату!</string>
+    <string name="date_template">%3$s-%2$s-%1$s</string>
+    <string name="time_template">%1$s:%2$s</string>
+    <string name="age_t">%1$s лет</string>
+    <string name="create_t">Создано: %1$s</string>
+    <string name="visit_t">Посещено: %1$s</string>
+    <string name="phone_t">Номер телефона: %1$s</string>
+    <string name="email_t">E-mail: %1$s</string>
+    <string name="video_youtube">Ссылка на видео YouTube</string>
+    <string name="description_event">Описание события</string>
+    <string name="description_comm">Описание сообщества</string>
+    <string name="enter_city">Введите город</string>
+    <string name="map">Карта</string>
+    <string name="copied">Скопировано!</string>
+    <string name="address_not_found">Адрес не найден!</string>
+    <string name="user_not_found">Пользователь не найден!</string>
+    <string name="input_place">Введите название места или улицу</string>
+    <string name="organizer">Организатор</string>
+    <string name="write">Написать</string>
+    <string name="party">Участники</string>
+    <string name="new_applications">Новые заявки (%1$d)</string>
+    <string name="all_party">Все участники</string>
+    <string name="go_to_chat">Перейти к чату сообщества</string>
+    <string name="user_name_age">%1$s, %2$s года</string>
+    <string name="cabin">Юнга</string>
+    <string name="master">Мастер</string>
+    <string name="cap">Кэп</string>
+    <string name="skipper">Шкипер</string>
+    <string name="i_go">Я пойду!</string>
+    <string name="give_feedback">Оставить отзыв</string>
+    <string name="passed">Прошло</string>
+    <string name="no_places">Мест нет</string>
+    <string name="empty_request_users">Новых заявок нет</string>
+    <string name="empty_users">Участников нет</string>
+    <string name="accept">Готово</string>
+    <string name="filters">Фильтры</string>
+    <string name="complete">Выполнено</string>
+    <string name="already_template">Уже идут: %1$s</string>
+    <string name="free">Бесплатно</string>
+    <string name="currency_template">%1$d руб.</string>
+    <string name="overall_rating">Общая оценка %1$s/5</string>
+    <string name="close">Закрыть</string>
+    <string name="write_message">Написать сообщение</string>
+    <string name="you_can_not_write">Возможность написания сообщения заблокирована</string>
+    <string name="can_not_dialog">У вас нету общих событий что бы вести диалог с этим человеком!</string>
+    <string name="need_permission_location">Для определения своей локации нужны разрешения!</string>
+    <string name="need_enable_gps">Для определения своей локации нужно включить GPS!</string>
+    <string name="need_permission">Нужны разрешения!</string>
+    <string name="participants_bot_title">&gt; Свайп вправо - принять\n&lt; Свайп влево - отклонить</string>
+    <string name="search_event_from">Поиск событий</string>
+    <string name="comp_select_title_t">Почему Вы решили пожаловаться на %1$s</string>
+    <string name="comp_description_hint_t">Опишите, пожалуйста, почему Вы решили пожаловаться на %1$s</string>
+    <string name="comp_select_title_delete">Почему Вы решили удалить событие</string>
+    <string name="comp_description_hint_delete">Опишите, пожалуйста, почему Вы решили удалить данное событие</string>
+    <string name="comp_select_title_delete_user">Почему Вы решили удалить участника</string>
+    <string name="comp_title_delete_user">Удаление участника</string>
+    <string name="comp_description_hint_delete_user">Опишите, пожалуйста, подробнее, почему Вы решили удалить данного участника</string>
+    <string name="on_user">пользователя</string>
+    <string name="on_event">событие</string>
+    <string name="comment">Комментарий</string>
+    <string name="publish_review">Опубликовать отзыв</string>
+    <string name="creator">Организатор</string>
+    <string name="comp_description">Опишите, пожалуйста, почему Вы решили пожаловаться на событие</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="comp_on_t">Жалоба на %1$s</string>
+    <string name="select">Выберите</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="delivered">Доставлено</string>
+    <string name="read">Прочитано</string>
+    <string name="sending">Отправляется</string>
+    <string name="voice_time_template">%01d:%02d</string>
+    <string name="need_permission_record">Для записи аудио нужны разрешения!</string>
+    <string name="need_permission_write">Для получения фото!</string>
+    <string name="need_permission_account">Для добавления аккаунтов нужны разришения!</string>
+    <string name="event_comm_blocked">Данное мероприятие заблокировано администратором!</string>
+    <string-array name="event_menu">
+        <item>Поделиться</item>
+        <item>Скопировать ссылку</item>
+        <item>Пожаловаться на событие</item>
+    </string-array>
+    <string-array name="profile_menu">
+        <item>Поделиться</item>
+        <item>Скопировать ссылку</item>
+        <item>Пожаловаться на пользователя</item>
+    </string-array>
+    <string-array name="event_menu_creator">
+        <item>Поделиться</item>
+        <item>Скопировать ссылку</item>
+        <item>Редактировать событие</item>
+        <item>Удалить событие</item>
+    </string-array>
+
+    <string-array name="comp_list">
+        <item>Унижение чужого достоинства</item>
+        <item>Непристойное поведение</item>
+        <item>Рассылка спама</item>
+        <item>Другая причина</item>
+        <item>Призыв к экстримизму</item>
+    </string-array>
+
+    <string-array name="comp_list_event">
+        <item>Оскорбительное поведение</item>
+        <item>Распространение экстремизма</item>
+        <item>Нарушение других законов РФ</item>
+        <item>Другая причина</item>
+    </string-array>
+    <string-array name="delete_event_community">
+        <item>Изменились планы</item>
+        <item>Мало участников</item>
+        <item>Отмена мероприятия</item>
+        <item>Другая причина</item>
+    </string-array>
+    <string-array name="sort_by">
+        <item>Дата</item>
+        <item>Популярность</item>
+    </string-array>
+
+    <string name="cause_delete">Причина удаления</string>
+    <string name="chose_cause">Выберете причину</string>
+    <string name="sent">Отправлено!</string>
+    <string name="send">Отправить</string>
+    <string name="cause">Причина</string>
+    <string name="mark">Оценка</string>
+    <string name="chose">Выберите</string>
+    <string name="vkontakte">Вконтакте</string>
+    <string name="overall_mark">Общая оценка</string>
+    <string name="fb">Фэйсбук</string>
+    <string name="tw">Твиттер</string>
+    <string name="instagram">Инстаграм</string>
+    <string name="events">События</string>
+    <string name="communities">Сообщества</string>
+    <string name="turn_on">Включить</string>
+    <string name="net_fail">Интернет не работает…</string>
+    <string name="age_limit_t">%1d+</string>
+    <string name="city_not_change">Город не выбран</string>
+    <string name="exit_title">Приложение будет закрыто</string>
+    <string name="exit_massage">Продолжить заполнение профиля возможно в личном кабинете</string>
+    <string name="incorrect_phone">Введите корректно номер телефона</string>
+    <string name="need_registration">Для того, что бы посмотреть детали события - необходимо зарегистрироваться</string>
+    <string name="need_registration_title">Нужна регистрация</string>
+    <string name="age_limit_exception">Вы не можете просматривать детали данного события, т.к. организатор установил возрастное ограничение</string>
+    <string name="facebook_app_id">2154031987970354</string>
+    <string name="fb_login_protocol_scheme">fb2154031987970354</string>
+    <string name="delete_dialog">Вы действительно хотите удалить участника %01$s из события: \"%02$s\"?</string>
+    <string name="delete_dialog_title">Удалить участника</string>
+    <string name="request_error">Ошибка %01$s</string>
+    <string name="pass_mail_error">Неверные почта или пароль!</string>
+    <string name="chose_county">Выберите страну:</string>
+    <string name="crop_title">Обрезка изображения</string>
+    <string name="set_url">Введите айди на ваш профиль</string>
+    <string name="permissions_denied_t">Разрешения отклонены %01$s</string>
+    <string name="permissions_denied">Разрешения отклонены</string>
+    <string name="reg_error">Пользователь с такой почтой уже существует!</string>
+    <string name="feed_back_tint">Как прошло событие?\nВы рекомендуете этого организатора другим?</string>
+    <string name="moderating">Отменить заявку</string>
+    <string name="canceled">Запрос отклонен</string>
+    <string name="restore_complete">Вам отправлено письмо с востановлением. Зайдите на почту %01$s что бы востановить доступ (письмо может попасть в спам)</string>
+    <string name="date_template_field">ДД.ММ.ГГГГ</string>
+    <string name="search_event">Поиск событий</string>
+    <string name="space" />
+    <string name="correct_date">Выберите корректную дату!!!</string>
+    <string name="left_review">Оставить отзыв</string>
+    <string name="my_reviews">Мои отзывы</string>
+    <string name="link">https://evfor.fun</string>
+    <string name="copied_to_clipboard">Ссылка на приложение скопирована в буфер обмена</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "818562186557",
+    "firebase_url": "https://skiper-42c84.firebaseio.com",
+    "project_id": "skiper-42c84",
+    "storage_bucket": "skiper-42c84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818562186557:android:b0262df936db569b",
+        "android_client_info": {
+          "package_name": "com.noty.team.event"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818562186557-d5v5g3nbova25bk09s9j8cel47t7s6un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeHGjXXnELFcf-PCyd4C58Z4t7rVYKZtM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team.noty.event">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activities.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.OpenPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.RegistrationPrewActivity"
+            android:screenOrientation="portrait">
+
+             <!--<intent-filter>-->
+             <!--<action android:name="android.intent.action.MAIN" />-->
+
+
+             <!--<category android:name="android.intent.category.LAUNCHER" />-->
+             <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.activities.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.EnterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.AccessRecoveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.DialogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activities.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.MySocNetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.EmptyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name=".ui.activities.TabsActivity"
+            android:label="@string/title_activity_tabs"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDuTrsL2GU_53et8BCXUR3YqL0Tc_Iyysw" />
+        <!--<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>-->
+        <!--<activity android:name="com.facebook.FacebookActivity"-->
+            <!--android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"-->
+            <!--android:label="@string/app_name" /> <activity android:name="com.facebook.CustomTabActivity"-->
+        <!--android:exported="true"> <intent-filter> <action android:name="android.intent.action.VIEW" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" /> <category android:name="android.intent.category.BROWSABLE" />-->
+        <!--<data android:scheme="@string/fb_login_protocol_scheme" /> </intent-filter>-->
+    <!--</activity>-->
+
+
+        <activity
+            android:name=".ui.activities.MapActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.search.FilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activities.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name=".ui.activities.SelectAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name=".ui.activities.SelectLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name=".ui.activities.SelectCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity android:name=".ui.activities.EditCategoriesActivity" />
+        <activity
+            android:name=".ui.activities.EventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data android:scheme="https"
+                    android:host="api.evfor.fun"
+                    android:pathPrefix="/events"/>
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data android:scheme="https"
+                    android:host="api.evfor.fun"
+                    android:pathPrefix="/communities"/>
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.ParticipantsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.ComplaintActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ba3e35a5721221513591951d82b85a9038099137" />
+
+        <activity
+            android:name=".ui.activities.PhotoViewActivity"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name=".ui.activities.EmptyBarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.GiveFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activities.VideoActivity" />
+
+        <service android:name=".services.TokenRefresh">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MessagesService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.vk.sdk.VKServiceActivity"
+            android:label="ServiceActivity"
+            android:theme="@style/VK.Transparent" />
+        <activity android:name=".ui.activities.ReviewActivity"></activity>
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+    </application>
+
+</manifest>

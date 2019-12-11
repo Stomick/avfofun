@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/last_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:paddingLeft="19dp"
+        android:paddingTop="17dp">
+
+        <TextView
+            android:id="@+id/comp_select_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/comp_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/select"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/comp_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/comment"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/comp_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="@string/comp_description"
+            android:textColor="@color/small_title_text"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/under_line"
+        android:background="@color/under_line" />
+
+    <Button
+        android:id="@+id/comp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_selector"
+        android:enabled="false"
+        android:text="@string/confirm"
+        android:textColor="@color/button_text_color" />
+</LinearLayout>

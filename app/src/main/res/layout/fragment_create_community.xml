@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/last_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/create_comm_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/white_rectangle_corners_bot"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/create_comm_add_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@android:color/transparent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/under_line"
+                android:layout_gravity="bottom"
+                android:background="@color/under_line" />
+
+            <ImageView
+                android:id="@+id/create_comm_add_imege_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_input_photo" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/white_rectangle_corners_bot"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/create_community_title"
+                style="@style/AppTheme.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/name_community"
+                android:paddingTop="@dimen/activity_vertical_margin" />
+
+            <EditText
+                android:id="@+id/create_comm_add_description"
+                style="@style/AppTheme.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/description_event"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/create_comm_add_video"
+                style="@style/AppTheme.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/video_youtube"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/create_community_category"
+                style="@style/AppTheme.Field.Selectable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/chose_category" />
+
+            <EditText
+                android:id="@+id/create_community_max_parts"
+                style="@style/AppTheme.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="5"
+                android:hint="@string/max_parts"
+                android:inputType="number"
+                android:paddingTop="@dimen/activity_vertical_margin" />
+
+            <TextView
+                android:id="@+id/create_community_days"
+                style="@style/AppTheme.Field.Selectable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/chose_day_visits" />
+
+            <TextView
+                android:id="@+id/create_community_time_begin"
+                style="@style/AppTheme.Field.Selectable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/chose_time_begin" />
+
+            <TextView
+                android:id="@+id/create_community_time_end"
+                style="@style/AppTheme.Field.Selectable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/chose_time_end" />
+
+            <TextView
+                android:id="@+id/create_community_location"
+                style="@style/AppTheme.Field.Selectable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/chose_location" />
+
+            <EditText
+                android:id="@+id/create_community_price"
+                style="@style/AppTheme.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="9"
+                android:hint="@string/set_price"
+                android:inputType="numberDecimal"
+                android:paddingTop="@dimen/activity_vertical_margin" />
+
+            <TextView
+                android:id="@+id/create_community_age_limit"
+                style="@style/AppTheme.Field.Selectable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/age_limit" />
+
+            <Switch
+                android:id="@+id/create_community_moderation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="4dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/moderation_parts"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/create_community_publish_button"
+            style="@style/AppTheme.BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_intro_button"
+            android:text="@string/publish_an_community" />
+
+        <TextView
+            android:id="@+id/create_add_more"
+            style="@style/AppTheme.BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@android:color/transparent"
+            android:text="@string/add_more_details"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+</ScrollView>

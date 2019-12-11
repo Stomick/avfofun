@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team.noty.event.ui.activities.SelectLocationActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/map_minus"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:src="@drawable/ic_minus" />
+
+        <ImageView
+            android:id="@+id/map_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/map_minus"
+            android:src="@drawable/ic_plus" />
+
+        <ImageView
+            android:id="@+id/map_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="4dp"
+            android:layout_below="@id/map_plus"
+            android:src="@drawable/ic_gps" />
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/map_exit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_check_contact"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

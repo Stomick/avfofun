@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/last_background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/white_rectangle_corners"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registration_gender_titleView"
+                style="@style/AppTheme.TitleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/you_gender" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:clickable="false"
+                android:paddingBottom="24dp"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/registration_rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:text="@string/male"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/registration_rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:layout_marginLeft="32dp"
+                    android:text="@string/female"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/under_line"
+                android:alpha="0.5"
+                android:background="@color/under_line" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+        <TextView
+            android:id="@+id/edit_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/firstname"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="textCapWords"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_lastname_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/lastname"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="textCapWords"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_city_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/city"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edit_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="textCapWords"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            tools:ignore="TextViewEdits" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_phone_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/phone"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="phone"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_mail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/mail"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_mail"
+            android:enabled="true"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:layout_marginBottom="12dp"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_birthdate_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/birth_date"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edit_birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text=""
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_my_soc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_chevron_right"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/my_soc"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_chevron_right"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/app_feedback"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:layout_marginBottom="12dp"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <TextView
+            android:id="@+id/edit_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_chevron_right"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/change_password"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:layout_marginBottom="12dp"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_rectangle_corners"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/edit_private_setting_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/privacy_settings" />
+
+            <Switch
+                android:id="@+id/edit_send_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/send_notifications_mail"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/edit_share_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/share_with_event"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/edit_share_community"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/share_with_community"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/under_line"
+            android:alpha="0.5"
+            android:background="@color/under_line" />
+
+        <Button
+            android:id="@+id/edit_exiting_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:text="@string/exiting_account"
+            android:textColor="@color/red_button_text" />
+    </LinearLayout>
+
+</ScrollView>

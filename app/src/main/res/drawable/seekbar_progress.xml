@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/progressshape">
+        <shape android:shape="line">
+            <size android:height="5dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/bar_progress" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_marginBottom="14dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/contact_item_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/small_title_text"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contact_item_photo"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ava_cabinet"
+            app:srcCompat="@drawable/ava_cabinet" />
+
+        <CheckBox
+            android:id="@+id/contact_item_checkBox"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/ic_check_contact_selector"
+            android:button="@null"
+            android:text="@string/space"
+            android:checked="true" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/contact_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

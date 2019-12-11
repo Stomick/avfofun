@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="10dp" android:bottom="10dp"
+        android:id="@android:id/background"
+        android:gravity="center_vertical|fill_horizontal">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="@color/line" />
+        </shape>
+    </item>
+    <item android:top="10dp" android:bottom="10dp"
+        android:id="@android:id/progress"
+        android:gravity="center_vertical|fill_horizontal">
+        <scale android:scaleWidth="100%">
+            <shape android:shape="line">
+                <stroke
+                    android:width="2dp"
+                    android:color="@color/bar_progress" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

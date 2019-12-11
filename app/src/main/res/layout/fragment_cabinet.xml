@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/last_background"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cabinet_add_friend"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_person_add" />
+
+                <TextView
+                    android:id="@+id/cabinetcabinet_title"
+                    style="@style/AppTheme.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:popupBackground="@color/colorPrimary"
+                    android:text="@string/cabinet_title" />
+
+                <ImageView
+                    android:id="@+id/cabinet_edit"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="match_parent"
+                    android:padding="14dp"
+                    app:srcCompat="@drawable/ic_edit" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/cabinet_photo"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="8dp"
+                    android:scaleType="centerCrop"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_row="0"
+                    app:layout_rowSpan="6"
+                    app:layout_rowWeight="1"
+                    app:srcCompat="@drawable/ava_cabinet" />
+
+                <TextView
+                    android:id="@+id/cabinet_rank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="7" />
+
+                <ProgressBar
+                    android:id="@+id/cabinet_progress"
+                    style="@style/AppTheme.HorizontalProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:progress="37"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="8" />
+
+                <TextView
+                    android:id="@+id/cabinet_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="Имя Фамилия"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/cabinet_timer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:singleLine="true"
+                    android:text="@string/registration_date"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1" />
+
+                <TextView
+                    android:id="@+id/cabinet_created_event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2" />
+
+                <TextView
+                    android:id="@+id/cabinet_visits_event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visit_t"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3" />
+
+                <TextView
+                    android:id="@+id/cabinet_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age_t"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4" />
+
+                <TextView
+                    android:id="@+id/cabinet_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5" />
+            </android.support.v7.widget.GridLayout>
+
+            <Button
+                android:id="@+id/cabinet_send_message"
+                style="@style/AppTheme.BigButton.BG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="9dp"
+                android:text="@string/write_message"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cabinet_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rectangle_corners"
+                android:paddingLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/under_line"
+                android:background="@color/under_line"
+                android:visibility="gone" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_rectangle_corners"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cabinet_phone"
+                    style="@style/AppTheme.Field.Selectable"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_chevron_right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/my_phone" />
+
+                <View
+                    android:id="@+id/under_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/under_line"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/under_line"
+                    android:paddingLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/cabinet_mail"
+                    style="@style/AppTheme.Field.Selectable"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_chevron_right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/email_t" />
+
+                <View
+                    android:id="@+id/under_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/under_line"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/under_line"
+                    android:paddingLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/cabinet_interests"
+                    style="@style/AppTheme.Field.Selectable"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_chevron_right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/my_interests" />
+
+                <View
+                    android:id="@+id/under_interests"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/under_line"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/under_line"
+                    android:paddingLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/cabinet_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/small_title_text"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/about_me"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/cabinet_about_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:backgroundTint="@color/small_title_text"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="8dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/under_line"
+                android:background="@color/under_line" />
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/cabinet_my_event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/my_event"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/cabinet_my_event_look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/look"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cabinet_my_events"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:layout_column="0"
+                    app:layout_columnSpan="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1" />
+
+                <TextView
+                    android:id="@+id/cabinet_my_communities"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/my_community"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="2" />
+
+                <TextView
+                    android:id="@+id/cabinet_my_communities_look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/look"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_column="1"
+                    app:layout_row="2" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cabinet_my_community"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:layout_column="0"
+                    app:layout_columnSpan="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="3" />
+
+                <TextView
+                    android:id="@+id/cabinet_my_comments_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/my_comments"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="4" />
+
+                <TextView
+                    android:id="@+id/cabinet_my_comments_look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/look"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_column="1"
+                    app:layout_row="4" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cabinet_my_comments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:layout_column="0"
+                    app:layout_columnSpan="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="5" />
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>

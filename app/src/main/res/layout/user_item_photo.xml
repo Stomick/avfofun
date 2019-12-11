@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.hdodenhof.circleimageview.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image"
+    android:layout_width="62dp"
+    android:layout_height="62dp"
+    android:layout_margin="3dp"
+    android:src="@drawable/ava_cabinet"
+    app:civ_circle_background_color="@android:color/white"
+    app:srcCompat="@drawable/ava_cabinet" />

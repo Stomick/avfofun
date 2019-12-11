@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.team.noty.event.ui.activities.search.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/filter_city_title"
+            style="@style/AppTheme.TitleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/city" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_city_field"
+                style="@style/AppTheme.Field.Selectable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="" >
+                <requestFocus/>
+            </TextView>
+
+            <ImageView
+                android:id="@+id/filter_city_cancel"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_cancel_24px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/filter_date_title"
+            style="@style/AppTheme.TitleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/filter_date_field"
+            style="@style/AppTheme.Field.Selectable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/any_date" />
+
+        <TextView
+            android:id="@+id/filter_time_title"
+            style="@style/AppTheme.TitleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/time" />
+
+        <TextView
+            android:id="@+id/filter_time_field"
+            style="@style/AppTheme.Field.Selectable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/any_time" />
+
+        <TextView
+            android:id="@+id/filter_age_title"
+            style="@style/AppTheme.TitleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/age_parts" />
+
+        <TextView
+            android:id="@+id/filter_age_field"
+            style="@style/AppTheme.Field.Selectable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/any_age" />
+
+
+        <TextView
+            android:id="@+id/filter_count_title"
+            style="@style/AppTheme.TitleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/count_parts" />
+
+        <EditText
+            android:id="@+id/filter_count_field"
+            style="@style/AppTheme.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_max_count"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/filter_price_title"
+            style="@style/AppTheme.TitleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/price" />
+
+        <EditText
+            android:id="@+id/filter_price_field"
+            style="@style/AppTheme.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_price_to"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/filter_sort_title"
+            style="@style/AppTheme.TitleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/sort_by" />
+        <TextView
+            android:id="@+id/filter_sort_field"
+            style="@style/AppTheme.Field.Selectable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/check_only_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Искать только сообщества"
+            />
+            <CheckBox
+                android:id="@+id/check_only_communities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Искать только события"
+                />
+
+        <Button
+            android:id="@+id/filter_apply_button"
+            style="@style/AppTheme.BigButton.BG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apply" />
+
+        <Button
+            android:id="@+id/filter_reset_button"
+            style="@style/AppTheme.BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/reset_filter"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</ScrollView>
