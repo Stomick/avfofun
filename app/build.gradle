@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
 
     defaultConfig {
-        applicationId "com.noty.team.event"
+        applicationId "evfor.fun.skvader"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
@@ -87,6 +87,7 @@ dependencies {
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
     implementation 'com.google.firebase:firebase-core:15.0.2'
     implementation 'com.google.firebase:firebase-messaging:15.0.2'
+
     //FB
     implementation 'com.facebook.android:facebook-android-sdk:4.36.0'
     //VK

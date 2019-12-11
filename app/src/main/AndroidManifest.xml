@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.team.noty.event">
+    package="evfor.fun.skvader">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
-        android:name=".app.App"
+        android:name="evfor.fun.skvader.app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.activities.IntroActivity"
+            android:name="evfor.fun.skvader.ui.activities.IntroActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WithOutBar">
             <intent-filter>
@@ -30,10 +30,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.OpenPhotoActivity"
+            android:name="evfor.fun.skvader.ui.activities.OpenPhotoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.RegistrationPrewActivity"
+            android:name="evfor.fun.skvader.ui.activities.RegistrationPrewActivity"
             android:screenOrientation="portrait">
 
              <!--<intent-filter>-->
@@ -44,33 +44,33 @@
              <!--</intent-filter>-->
         </activity>
         <activity
-            android:name=".ui.activities.RegistrationActivity"
+            android:name="evfor.fun.skvader.ui.activities.RegistrationActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.EnterActivity"
+            android:name="evfor.fun.skvader.ui.activities.EnterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.AccessRecoveryActivity"
+            android:name="evfor.fun.skvader.ui.activities.AccessRecoveryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.DialogActivity"
+            android:name="evfor.fun.skvader.ui.activities.DialogActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.activities.EditProfileActivity"
+            android:name="evfor.fun.skvader.ui.activities.EditProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.ChangePasswordActivity"
+            android:name="evfor.fun.skvader.ui.activities.ChangePasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.MySocNetActivity"
+            android:name="evfor.fun.skvader.ui.activities.MySocNetActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.EmptyActivity"
+            android:name="evfor.fun.skvader.ui.activities.EmptyActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WithOutBar" />
         <activity
-            android:name=".ui.activities.TabsActivity"
+            android:name="evfor.fun.skvader.ui.activities.TabsActivity"
             android:label="@string/title_activity_tabs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WithOutBar"
@@ -94,33 +94,33 @@
 
 
         <activity
-            android:name=".ui.activities.MapActivity"
+            android:name="evfor.fun.skvader.ui.activities.MapActivity"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.search.FilterActivity"
+            android:name="evfor.fun.skvader.ui.activities.search.FilterActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".ui.activities.search.SearchActivity"
+            android:name="evfor.fun.skvader.ui.activities.search.SearchActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.WithOutBar" />
         <activity
-            android:name=".ui.activities.SelectAddressActivity"
+            android:name="evfor.fun.skvader.ui.activities.SelectAddressActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WithOutBar" />
         <activity
-            android:name=".ui.activities.SelectLocationActivity"
+            android:name="evfor.fun.skvader.ui.activities.SelectLocationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WithOutBar" />
         <activity
-            android:name=".ui.activities.SelectCityActivity"
+            android:name="evfor.fun.skvader.ui.activities.SelectCityActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WithOutBar" />
-        <activity android:name=".ui.activities.EditCategoriesActivity" />
+        <activity android:name="evfor.fun.skvader.ui.activities.EditCategoriesActivity" />
         <activity
-            android:name=".ui.activities.EventActivity"
+            android:name="evfor.fun.skvader.ui.activities.EventActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.WithOutBar">
             <intent-filter android:label="@string/app_name">
@@ -145,10 +145,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.ParticipantsActivity"
+            android:name="evfor.fun.skvader.ui.activities.ParticipantsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.ComplaintActivity"
+            android:name="evfor.fun.skvader.ui.activities.ComplaintActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -156,22 +156,22 @@
             android:value="ba3e35a5721221513591951d82b85a9038099137" />
 
         <activity
-            android:name=".ui.activities.PhotoViewActivity"
+            android:name="evfor.fun.skvader.ui.activities.PhotoViewActivity"
             android:theme="@style/AppTheme.WithOutBar" />
         <activity
-            android:name=".ui.activities.EmptyBarActivity"
+            android:name="evfor.fun.skvader.ui.activities.EmptyBarActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activities.GiveFeedbackActivity"
+            android:name="evfor.fun.skvader.ui.activities.GiveFeedbackActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.activities.VideoActivity" />
+        <activity android:name="evfor.fun.skvader.ui.activities.VideoActivity" />
 
-        <service android:name=".services.TokenRefresh">
+        <service android:name="evfor.fun.skvader.services.TokenRefresh">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".services.MessagesService">
+        <service android:name="evfor.fun.skvader.services.MessagesService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -181,7 +181,7 @@
             android:name="com.vk.sdk.VKServiceActivity"
             android:label="ServiceActivity"
             android:theme="@style/VK.Transparent" />
-        <activity android:name=".ui.activities.ReviewActivity"></activity>
+        <activity android:name="evfor.fun.skvader.ui.activities.ReviewActivity"></activity>
 
 
         <meta-data

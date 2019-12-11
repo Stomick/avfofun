@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.team.noty.event.ui.activities.SelectLocationActivity">
+    tools:context="skvader.ui.activities.SelectLocationActivity">
 
     <include
         android:id="@+id/include"

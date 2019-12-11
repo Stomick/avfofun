@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">175474488088-emd4jrevh99dtmiqbslh4j88m6if2qdl.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://unified-freedom-162213.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">175474488088</string>
+    <string name="google_api_key" translatable="false">AIzaSyC-gQ2q8JMbq2XZKfcaF3-vvVvQNOanmC4</string>
+    <string name="google_app_id" translatable="false">1:175474488088:android:d73c4b59b4d7c89f25646d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC-gQ2q8JMbq2XZKfcaF3-vvVvQNOanmC4</string>
+    <string name="google_storage_bucket" translatable="false">unified-freedom-162213.appspot.com</string>
+    <string name="project_id" translatable="false">unified-freedom-162213</string>
+</resources>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="evfor.fun.skvader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="evfor.fun.skvader.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="evfor.fun.skvader.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="evfor.fun.skvader.app.App"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.OpenPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.RegistrationPrewActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.EnterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.AccessRecoveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.DialogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.MySocNetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.EmptyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.TabsActivity"
+            android:label="@string/title_activity_tabs"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDuTrsL2GU_53et8BCXUR3YqL0Tc_Iyysw" />
+        <!-- <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/> -->
+        <!-- <activity android:name="com.facebook.FacebookActivity" -->
+        <!-- android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+        <!-- android:label="@string/app_name" /> <activity android:name="com.facebook.CustomTabActivity" -->
+        <!-- android:exported="true"> <intent-filter> <action android:name="android.intent.action.VIEW" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> <category android:name="android.intent.category.BROWSABLE" /> -->
+        <!-- <data android:scheme="@string/fb_login_protocol_scheme" /> </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.MapActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.search.FilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.SelectAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.SelectLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.SelectCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity android:name="evfor.fun.skvader.ui.activities.EditCategoriesActivity" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.EventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithOutBar" >
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="api.evfor.fun"
+                    android:pathPrefix="/events"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="api.evfor.fun"
+                    android:pathPrefix="/communities"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.ParticipantsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.ComplaintActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ba3e35a5721221513591951d82b85a9038099137" />
+
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.PhotoViewActivity"
+            android:theme="@style/AppTheme.WithOutBar" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.EmptyBarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="evfor.fun.skvader.ui.activities.GiveFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="evfor.fun.skvader.ui.activities.VideoActivity" />
+
+        <service android:name="evfor.fun.skvader.services.TokenRefresh" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="evfor.fun.skvader.services.MessagesService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.vk.sdk.VKServiceActivity"
+            android:label="ServiceActivity"
+            android:theme="@style/VK.Transparent" />
+        <activity android:name="evfor.fun.skvader.ui.activities.ReviewActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+            android:enabled="false"
+            android:process=":leakcanary" />
+        <service
+            android:name="com.squareup.leakcanary.DisplayLeakService"
+            android:enabled="false"
+            android:process=":leakcanary" />
+
+        <activity
+            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+            android:enabled="false"
+            android:icon="@drawable/leak_canary_icon"
+            android:label="@string/leak_canary_display_activity_label"
+            android:process=":leakcanary"
+            android:taskAffinity="com.squareup.leakcanary.evfor.fun.skvader"
+            android:theme="@style/leak_canary_LeakCanary.Base" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.squareup.leakcanary.internal.RequestStoragePermissionActivity"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/leak_canary_icon"
+            android:label="@string/leak_canary_storage_permission_activity_label"
+            android:process=":leakcanary"
+            android:taskAffinity="com.squareup.leakcanary.evfor.fun.skvader"
+            android:theme="@style/leak_canary_Theme.Transparent" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="evfor.fun.skvader" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="evfor.fun.skvader.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <activity android:name="com.facebook.CustomTabActivity" />
+        <activity
+            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.Transparent.Permission" />
+        <activity
+            android:name="com.marchinram.rxgallery.RxGalleryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="evfor.fun.skvader.imageprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="com.facebook.marketing.internal.MarketingInitProvider"
+            android:authorities="evfor.fun.skvader.MarketingInitProvider"
+            android:exported="false" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="evfor.fun.skvader.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

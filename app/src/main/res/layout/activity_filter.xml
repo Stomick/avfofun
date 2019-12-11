@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    tools:context="com.team.noty.event.ui.activities.search.FilterActivity">
+    tools:context="skvader.ui.activities.search.FilterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

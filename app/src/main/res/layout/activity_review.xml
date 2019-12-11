@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/last_background"
-    tools:context="com.team.noty.event.ui.activities.ReviewActivity">
+    tools:context="skvader.ui.activities.ReviewActivity">
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_review"
         android:layout_margin="10dp"

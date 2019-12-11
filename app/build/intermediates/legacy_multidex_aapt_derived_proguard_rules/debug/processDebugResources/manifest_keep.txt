@@ -1,0 +1,2 @@
+# Referenced at /home/stomick/work/avfofun/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:34
+-keep class evfor.fun.skvader.app.App { <init>(...); }

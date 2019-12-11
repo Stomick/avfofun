@@ -10,7 +10,7 @@
     android:paddingBottom="16dp"
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
-    tools:context="com.team.noty.event.ui.activities.IntroActivity">
+    tools:context="skvader.ui.activities.IntroActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/intro_toolbar"

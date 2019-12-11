@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/last_background"
     android:orientation="vertical"
-    tools:context="com.team.noty.event.ui.activities.search.SearchActivity">
+    tools:context="skvader.ui.activities.search.SearchActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

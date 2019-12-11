@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="8dp"
-    tools:context="com.team.noty.event.ui.activities.RegistrationPrewActivity">
+    tools:context="skvader.ui.activities.RegistrationPrewActivity">
 
     <com.pixplicity.multiviewpager.MultiViewPager
         android:id="@+id/reg_prew_counter"

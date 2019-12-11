@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/stomick/work/avfofun/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,453",
+                        "endLines": "8,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "448,825"
+                    }
+                }
+            ]
+        }
+    ]
+}

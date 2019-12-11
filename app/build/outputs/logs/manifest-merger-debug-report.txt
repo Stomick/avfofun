@@ -1,0 +1,1041 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:17:1-61:12
+MERGED from [com.android.support:multidex:1.0.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/31c115bd5be9fe0957e4f90113530cc3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.mukeshsolanki:country-picker-android:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/country-picker-android-1.2.0.aar/54bb0c3159eb535ea4df5422f05c37a3/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.dagger:dagger-android-support:2.11] /home/stomick/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/59e3b06aa27c5b7b1aa5cccb80d137d4/AndroidManifest.xml:16:1-19:12
+MERGED from [com.pixplicity.multiviewpager:library:1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.aar/f94c7aa072276e1c44f1cb72849c8a3b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.vk:androidsdk:1.6.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/aa8492942003fc1dc7d93ff0f8b762f3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/f30307b73ec928456c8b86351c9085ce/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-core:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-core-15.0.2.aar/395fc0251d30926d4e1060f9cc987c05/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:17:1-41:12
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:17:1-65:12
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-15.0.0.aar/2be6984246bb7c689463575674d52f5e/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/04430b391e9ac03a7663f3a7965712af/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8e8342ed2e0955d91c4e508e45eea56a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-15.0.0.aar/4d9f5ccbdf6c4afc9a76767829ef5344/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/ac23bb26539bf9e32f081b1724538025/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b15d17687394d2f5649a08a5265de299/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/AndroidManifest.xml:17:1-28:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/69764da6078cdf0c3732fac10b26db03/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/bcecfc0583fa757c14cc4a1a961f0d02/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/1406849f43f65089bb5b232e6a6eb0ac/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:21:1-37:12
+MERGED from [com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.8] /home/stomick/.gradle/caches/transforms-1/files-1.1/AlphabetIndex-Fast-Scroll-RecyclerView-1.0.8.aar/b51b8d23c7f32226839a0bd477aa1c63/AndroidManifest.xml:2:1-17:12
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.1.0.aar/46802a16dc743aee0cd5b265f4c32c84/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/ce092663e714ebca833c17997abaae52/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/0cdd45e375670ae75039e4b7af35646c/AndroidManifest.xml:17:1-22:12
+MERGED from [me.zhanghai.android.materialratingbar:library:1.3.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/62aa5c44a445aa42070b22c154dd0643/AndroidManifest.xml:6:1-15:12
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/926448178c0c468006f45c1c4c525ad5/AndroidManifest.xml:2:1-17:12
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/cbbffcbd1a9f9a28c896e6cfdc816759/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.silvestrpredko:dot-progress-bar:1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/dot-progress-bar-1.1.aar/766a068026f061cdfad13ebed69572d6/AndroidManifest.xml:2:1-16:12
+MERGED from [gun0912.ted:tedpermission-rx2:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-rx2-2.1.1.aar/9fd0e058a61cc0c998ed660ef63c0223/AndroidManifest.xml:2:1-12:12
+MERGED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29605a03febbe0969e68eb158da7c1c5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/0d407653f8509fe9db95f9597d8e048a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/22b0f6f801b29ab3db121db38652202e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/fb9dc06c2bf35d0e75803351275f0c39/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/cbd4684b12e0115a64c79b7554122242/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/68e6ba34ab858843ec48d9a5f827d53f/AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/cd65ad3761af516abf24aff70b199db6/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/bee9d089774fc8ebbe17e1a16bf2b669/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.alxrm:audiowave-progressbar:0.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/audiowave-progressbar-0.9.aar/3e301496b87d35e05c9b59b1e17b82eb/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:gridlayout-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-27.1.1.aar/33d26c66df2e928c4b0e998140a07459/AndroidManifest.xml:17:1-22:12
+MERGED from [ru.tinkoff.decoro:decoro:1.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/decoro-1.1.1.aar/7afba8b20cb75cb53502bef35033348f/AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.liuguangqiang.swipeback:library:1.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/67f051f5d49ee87fadfa153b9f24094d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.nex3z:flow-layout:1.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/flow-layout-1.2.2.aar/2393be019652af889e7ec323947a4cb4/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.dagger:dagger-android:2.11] /home/stomick/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/4af76546bacc659bc72696f15e09230d/AndroidManifest.xml:16:1-19:12
+MERGED from [com.github.pakoito:RxPaper2:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxPaper2-1.2.0.aar/d2219526f6eafdaa5f0f0928f14867e9/AndroidManifest.xml:22:1-37:12
+MERGED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:2:1-18:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/d99afc1929f4ce4671478f683b61c0b9/AndroidManifest.xml:15:1-21:12
+MERGED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:2:1-27:12
+MERGED from [com.makeramen:roundedimageview:2.3.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/roundedimageview-2.3.0.aar/2674d08858a49ae2c5b097eb19f1429b/AndroidManifest.xml:2:1-9:12
+MERGED from [ru.rambler.android:swipe-layout:1.0.14] /home/stomick/.gradle/caches/transforms-1/files-1.1/swipe-layout-1.0.14.aar/d44ebd85915067ed73058590057cf0ec/AndroidManifest.xml:2:1-16:12
+MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/subsampling-scale-image-view-3.10.0.aar/253a567b17261631216c53cc7d089774/AndroidManifest.xml:2:1-11:12
+MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4c495028d96e397aba5a4b7a060da902/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/4dd44b7ddb81815ca43a19ae3be875a8/AndroidManifest.xml:2:1-12:12
+MERGED from [com.wang.avi:library:2.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-2.1.3.aar/4433f80c6f3de15e96032ee5d280c697/AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-analyzer-1.5.4.aar/0614c0e68f313c17183df08590e89460/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/90efea934b0b53d553620ef3ab632a6c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/5f998ad14824e976a466d3aa7bbdc04a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/9ceff087733c100c21397ee311903055/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/70db2ef4af803a5242206dae7025f1d0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/4543261f4930eddb7b55578cd8d73e0d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-places:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/348be95aa51d201b98ad125650224f85/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/9025b550fc182486e1cc6933278df5f7/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/b46b31c973cfa8b744704cf73f398e0d/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:21:1-53:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/64d03e7367f0355007c5a50e1000ce80/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e5726c5b3befa42a8104690ca1589bb8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/bf2aad80085223078092f92bc19d04fb/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:exifinterface:27.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/f4ee0a7982e40a047eb269a7c811f9d4/AndroidManifest.xml:17:1-22:12
+MERGED from [io.paperdb:paperdb:2.6] /home/stomick/.gradle/caches/transforms-1/files-1.1/paperdb-2.6.aar/705998178c7a00f2bc93012ea4285e34/AndroidManifest.xml:2:1-14:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/7fac6eea21d3be5c1cf3646fdd3608c2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5b112046e327dc39c77299841d6efca3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.2.aar/7e5b6b4c3644d31771ebe9e7ebac99e7/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b03e281a0a8db3417de03d85d41470c3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/132e29e227421b8ba91b348653eaaeb8/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+	package
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:3:5-32
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:1-197:12
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:10:5-80
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:23:5-80
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:23:5-80
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:11:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:24:5-81
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:24:5-81
+MERGED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:11:5-81
+MERGED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:12:5-71
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:12:22-68
+application
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:14:5-195:19
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:26:5-59:19
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:26:5-59:19
+MERGED from [com.vk:androidsdk:1.6.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/AndroidManifest.xml:11:5-16:19
+MERGED from [com.vk:androidsdk:1.6.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/AndroidManifest.xml:11:5-16:19
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/aa8492942003fc1dc7d93ff0f8b762f3/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/aa8492942003fc1dc7d93ff0f8b762f3/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/f30307b73ec928456c8b86351c9085ce/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/f30307b73ec928456c8b86351c9085ce/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-core:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-core-15.0.2.aar/395fc0251d30926d4e1060f9cc987c05/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-core-15.0.2.aar/395fc0251d30926d4e1060f9cc987c05/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:28:5-39:19
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:28:5-39:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-15.0.0.aar/2be6984246bb7c689463575674d52f5e/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-15.0.0.aar/2be6984246bb7c689463575674d52f5e/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/04430b391e9ac03a7663f3a7965712af/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/04430b391e9ac03a7663f3a7965712af/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8e8342ed2e0955d91c4e508e45eea56a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8e8342ed2e0955d91c4e508e45eea56a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-15.0.0.aar/4d9f5ccbdf6c4afc9a76767829ef5344/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-15.0.0.aar/4d9f5ccbdf6c4afc9a76767829ef5344/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/ac23bb26539bf9e32f081b1724538025/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/ac23bb26539bf9e32f081b1724538025/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b15d17687394d2f5649a08a5265de299/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b15d17687394d2f5649a08a5265de299/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/69764da6078cdf0c3732fac10b26db03/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/69764da6078cdf0c3732fac10b26db03/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/bcecfc0583fa757c14cc4a1a961f0d02/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/bcecfc0583fa757c14cc4a1a961f0d02/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/1406849f43f65089bb5b232e6a6eb0ac/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/1406849f43f65089bb5b232e6a6eb0ac/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:28:5-35:19
+MERGED from [com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.8] /home/stomick/.gradle/caches/transforms-1/files-1.1/AlphabetIndex-Fast-Scroll-RecyclerView-1.0.8.aar/b51b8d23c7f32226839a0bd477aa1c63/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.8] /home/stomick/.gradle/caches/transforms-1/files-1.1/AlphabetIndex-Fast-Scroll-RecyclerView-1.0.8.aar/b51b8d23c7f32226839a0bd477aa1c63/AndroidManifest.xml:11:5-15:19
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.1.0.aar/46802a16dc743aee0cd5b265f4c32c84/AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.1.0.aar/46802a16dc743aee0cd5b265f4c32c84/AndroidManifest.xml:11:5-20
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/926448178c0c468006f45c1c4c525ad5/AndroidManifest.xml:11:5-15:19
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/926448178c0c468006f45c1c4c525ad5/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.silvestrpredko:dot-progress-bar:1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/dot-progress-bar-1.1.aar/766a068026f061cdfad13ebed69572d6/AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.silvestrpredko:dot-progress-bar:1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/dot-progress-bar-1.1.aar/766a068026f061cdfad13ebed69572d6/AndroidManifest.xml:11:5-14:19
+MERGED from [gun0912.ted:tedpermission-rx2:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-rx2-2.1.1.aar/9fd0e058a61cc0c998ed660ef63c0223/AndroidManifest.xml:9:5-10:19
+MERGED from [gun0912.ted:tedpermission-rx2:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-rx2-2.1.1.aar/9fd0e058a61cc0c998ed660ef63c0223/AndroidManifest.xml:9:5-10:19
+MERGED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:9:5-15:19
+MERGED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:9:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/fb9dc06c2bf35d0e75803351275f0c39/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/fb9dc06c2bf35d0e75803351275f0c39/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/cd65ad3761af516abf24aff70b199db6/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/cd65ad3761af516abf24aff70b199db6/AndroidManifest.xml:9:5-20
+MERGED from [ru.tinkoff.decoro:decoro:1.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/decoro-1.1.1.aar/7afba8b20cb75cb53502bef35033348f/AndroidManifest.xml:12:5-20
+MERGED from [ru.tinkoff.decoro:decoro:1.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/decoro-1.1.1.aar/7afba8b20cb75cb53502bef35033348f/AndroidManifest.xml:12:5-20
+MERGED from [com.github.liuguangqiang.swipeback:library:1.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/67f051f5d49ee87fadfa153b9f24094d/AndroidManifest.xml:9:5-47
+MERGED from [com.github.liuguangqiang.swipeback:library:1.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/67f051f5d49ee87fadfa153b9f24094d/AndroidManifest.xml:9:5-47
+MERGED from [com.nex3z:flow-layout:1.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/flow-layout-1.2.2.aar/2393be019652af889e7ec323947a4cb4/AndroidManifest.xml:11:5-20
+MERGED from [com.nex3z:flow-layout:1.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/flow-layout-1.2.2.aar/2393be019652af889e7ec323947a4cb4/AndroidManifest.xml:11:5-20
+MERGED from [com.github.pakoito:RxPaper2:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxPaper2-1.2.0.aar/d2219526f6eafdaa5f0f0928f14867e9/AndroidManifest.xml:31:5-35:19
+MERGED from [com.github.pakoito:RxPaper2:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxPaper2-1.2.0.aar/d2219526f6eafdaa5f0f0928f14867e9/AndroidManifest.xml:31:5-35:19
+MERGED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:11:5-16:19
+MERGED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:11:5-16:19
+MERGED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:13:5-25:19
+MERGED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:13:5-25:19
+MERGED from [ru.rambler.android:swipe-layout:1.0.14] /home/stomick/.gradle/caches/transforms-1/files-1.1/swipe-layout-1.0.14.aar/d44ebd85915067ed73058590057cf0ec/AndroidManifest.xml:12:5-14:47
+MERGED from [ru.rambler.android:swipe-layout:1.0.14] /home/stomick/.gradle/caches/transforms-1/files-1.1/swipe-layout-1.0.14.aar/d44ebd85915067ed73058590057cf0ec/AndroidManifest.xml:12:5-14:47
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/4dd44b7ddb81815ca43a19ae3be875a8/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/4dd44b7ddb81815ca43a19ae3be875a8/AndroidManifest.xml:10:5-20
+MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-analyzer-1.5.4.aar/0614c0e68f313c17183df08590e89460/AndroidManifest.xml:23:5-20
+MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-analyzer-1.5.4.aar/0614c0e68f313c17183df08590e89460/AndroidManifest.xml:23:5-20
+MERGED from [com.facebook.android:facebook-places:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/348be95aa51d201b98ad125650224f85/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/348be95aa51d201b98ad125650224f85/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/9025b550fc182486e1cc6933278df5f7/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/9025b550fc182486e1cc6933278df5f7/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/b46b31c973cfa8b744704cf73f398e0d/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/b46b31c973cfa8b744704cf73f398e0d/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:28:5-51:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/bf2aad80085223078092f92bc19d04fb/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/bf2aad80085223078092f92bc19d04fb/AndroidManifest.xml:9:5-20
+MERGED from [io.paperdb:paperdb:2.6] /home/stomick/.gradle/caches/transforms-1/files-1.1/paperdb-2.6.aar/705998178c7a00f2bc93012ea4285e34/AndroidManifest.xml:12:5-20
+MERGED from [io.paperdb:paperdb:2.6] /home/stomick/.gradle/caches/transforms-1/files-1.1/paperdb-2.6.aar/705998178c7a00f2bc93012ea4285e34/AndroidManifest.xml:12:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.2.aar/7e5b6b4c3644d31771ebe9e7ebac99e7/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.2.aar/7e5b6b4c3644d31771ebe9e7ebac99e7/AndroidManifest.xml:22:5-20
+	android:supportsRtl
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:20:9-35
+		REJECTED from [com.facebook.android:facebook-places:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/348be95aa51d201b98ad125650224f85/AndroidManifest.xml:28:18-44
+		REJECTED from [com.facebook.android:facebook-applinks:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/9025b550fc182486e1cc6933278df5f7/AndroidManifest.xml:28:18-44
+		REJECTED from [com.facebook.android:facebook-messenger:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/b46b31c973cfa8b744704cf73f398e0d/AndroidManifest.xml:28:18-44
+		REJECTED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:28:18-44
+		REJECTED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:28:18-44
+	android:label
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:18:9-41
+	android:roundIcon
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:19:9-54
+	android:icon
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:17:9-43
+	android:allowBackup
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:16:9-35
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:21:9-40
+	tools:replace
+		ADDED from [ru.rambler.android:swipe-layout:1.0.14] /home/stomick/.gradle/caches/transforms-1/files-1.1/swipe-layout-1.0.14.aar/d44ebd85915067ed73058590057cf0ec/AndroidManifest.xml:14:9-44
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:15:9-49
+activity#evfor.fun.skvader.ui.activities.IntroActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:22:9-31:20
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:24:13-49
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:25:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:23:13-73
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:29:27-74
+activity#evfor.fun.skvader.ui.activities.OpenPhotoActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:32:9-34:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:34:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:33:13-77
+activity#evfor.fun.skvader.ui.activities.RegistrationPrewActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:35:9-45:20
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:37:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:36:13-84
+activity#evfor.fun.skvader.ui.activities.RegistrationActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:46:9-48:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:48:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:47:13-80
+activity#evfor.fun.skvader.ui.activities.EnterActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:49:9-51:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:51:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:50:13-73
+activity#evfor.fun.skvader.ui.activities.AccessRecoveryActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:52:9-54:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:54:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:53:13-82
+activity#evfor.fun.skvader.ui.activities.DialogActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:55:9-58:58
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:57:13-49
+	android:windowSoftInputMode
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:58:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:56:13-74
+activity#evfor.fun.skvader.ui.activities.EditProfileActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:59:9-61:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:61:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:60:13-79
+activity#evfor.fun.skvader.ui.activities.ChangePasswordActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:62:9-64:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:64:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:63:13-82
+activity#evfor.fun.skvader.ui.activities.MySocNetActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:65:9-67:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:67:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:66:13-76
+activity#evfor.fun.skvader.ui.activities.EmptyActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:68:9-71:58
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:70:13-49
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:71:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:69:13-73
+activity#evfor.fun.skvader.ui.activities.TabsActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:72:9-78:20
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:75:13-49
+	android:label
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:74:13-56
+	android:windowSoftInputMode
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:77:13-60
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:76:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:73:13-72
+meta-data#com.google.android.gms.version
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:80:9-82:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:82:13-66
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:81:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:83:9-85:71
+	android:value
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:85:13-68
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:84:13-58
+activity#evfor.fun.skvader.ui.activities.MapActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:96:9-99:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:99:13-49
+	android:label
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:98:13-56
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:97:13-71
+activity#evfor.fun.skvader.ui.activities.search.FilterActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:100:9-103:57
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:102:13-49
+	android:windowSoftInputMode
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:103:13-54
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:101:13-81
+activity#evfor.fun.skvader.ui.activities.search.SearchActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:104:9-108:58
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:106:13-49
+	android:windowSoftInputMode
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:107:13-54
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:108:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:105:13-81
+activity#evfor.fun.skvader.ui.activities.SelectAddressActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:109:9-112:58
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:111:13-49
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:112:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:110:13-81
+activity#evfor.fun.skvader.ui.activities.SelectLocationActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:113:9-116:58
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:115:13-49
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:116:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:114:13-82
+activity#evfor.fun.skvader.ui.activities.SelectCityActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:117:9-120:58
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:119:13-49
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:120:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:118:13-78
+activity#evfor.fun.skvader.ui.activities.EditCategoriesActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:121:9-91
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:121:19-88
+activity#evfor.fun.skvader.ui.activities.EventActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:122:9-146:20
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:124:13-49
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:125:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:123:13-73
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:api.evfor.fun+data:pathPrefix:/events+data:scheme:https
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:126:13-135:29
+	android:label
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:126:28-60
+action#android.intent.action.VIEW
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:127:17-69
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:127:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:128:17-76
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:128:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:129:17-78
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:129:27-75
+data
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:131:17-133:51
+	android:host
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:132:21-49
+	android:scheme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:131:23-45
+	android:pathPrefix
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:133:21-49
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:api.evfor.fun+data:pathPrefix:/communities+data:scheme:https
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:136:13-145:29
+	android:label
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:136:28-60
+activity#evfor.fun.skvader.ui.activities.ParticipantsActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:147:9-149:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:149:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:148:13-80
+activity#evfor.fun.skvader.ui.activities.ComplaintActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:150:9-152:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:152:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:151:13-77
+meta-data#io.fabric.ApiKey
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:154:9-156:72
+	android:value
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:156:13-69
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:155:13-44
+activity#evfor.fun.skvader.ui.activities.PhotoViewActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:158:9-160:58
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:160:13-55
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:159:13-77
+activity#evfor.fun.skvader.ui.activities.EmptyBarActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:161:9-163:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:163:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:162:13-76
+activity#evfor.fun.skvader.ui.activities.GiveFeedbackActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:164:9-166:52
+	android:screenOrientation
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:166:13-49
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:165:13-80
+activity#evfor.fun.skvader.ui.activities.VideoActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:167:9-82
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:167:19-79
+service#evfor.fun.skvader.services.TokenRefresh
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:169:9-173:19
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:169:18-72
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:170:13-172:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:171:17-80
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:171:25-77
+service#evfor.fun.skvader.services.MessagesService
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:174:9-178:19
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:174:18-75
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:175:13-177:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:176:17-78
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:176:25-75
+activity#com.vk.sdk.VKServiceActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:180:9-183:53
+MERGED from [com.vk:androidsdk:1.6.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/AndroidManifest.xml:12:9-15:53
+MERGED from [com.vk:androidsdk:1.6.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/AndroidManifest.xml:12:9-15:53
+	android:label
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:182:13-44
+	android:theme
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:183:13-50
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:181:13-56
+activity#evfor.fun.skvader.ui.activities.ReviewActivity
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:184:9-92
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:184:19-80
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:187:9-189:49
+	android:resource
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:189:13-46
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:188:13-83
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:192:9-194:53
+	android:resource
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:194:13-50
+	android:name
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml:193:13-84
+uses-sdk
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:multidex:1.0.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/31c115bd5be9fe0957e4f90113530cc3/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/31c115bd5be9fe0957e4f90113530cc3/AndroidManifest.xml:20:5-43
+MERGED from [com.github.mukeshsolanki:country-picker-android:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/country-picker-android-1.2.0.aar/54bb0c3159eb535ea4df5422f05c37a3/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.mukeshsolanki:country-picker-android:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/country-picker-android-1.2.0.aar/54bb0c3159eb535ea4df5422f05c37a3/AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.dagger:dagger-android-support:2.11] /home/stomick/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/59e3b06aa27c5b7b1aa5cccb80d137d4/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-android-support:2.11] /home/stomick/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/59e3b06aa27c5b7b1aa5cccb80d137d4/AndroidManifest.xml:18:3-42
+MERGED from [com.pixplicity.multiviewpager:library:1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.aar/f94c7aa072276e1c44f1cb72849c8a3b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.pixplicity.multiviewpager:library:1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.aar/f94c7aa072276e1c44f1cb72849c8a3b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.vk:androidsdk:1.6.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/AndroidManifest.xml:7:5-9:41
+MERGED from [com.vk:androidsdk:1.6.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/aa8492942003fc1dc7d93ff0f8b762f3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/aa8492942003fc1dc7d93ff0f8b762f3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/f30307b73ec928456c8b86351c9085ce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/f30307b73ec928456c8b86351c9085ce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-core-15.0.2.aar/395fc0251d30926d4e1060f9cc987c05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-core-15.0.2.aar/395fc0251d30926d4e1060f9cc987c05/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-15.0.0.aar/2be6984246bb7c689463575674d52f5e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-15.0.0.aar/2be6984246bb7c689463575674d52f5e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/04430b391e9ac03a7663f3a7965712af/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/04430b391e9ac03a7663f3a7965712af/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8e8342ed2e0955d91c4e508e45eea56a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8e8342ed2e0955d91c4e508e45eea56a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-15.0.0.aar/4d9f5ccbdf6c4afc9a76767829ef5344/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-15.0.0.aar/4d9f5ccbdf6c4afc9a76767829ef5344/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/ac23bb26539bf9e32f081b1724538025/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/ac23bb26539bf9e32f081b1724538025/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b15d17687394d2f5649a08a5265de299/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b15d17687394d2f5649a08a5265de299/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/69764da6078cdf0c3732fac10b26db03/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.36.0.aar/69764da6078cdf0c3732fac10b26db03/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/bcecfc0583fa757c14cc4a1a961f0d02/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/bcecfc0583fa757c14cc4a1a961f0d02/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/1406849f43f65089bb5b232e6a6eb0ac/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-share-4.36.0.aar/1406849f43f65089bb5b232e6a6eb0ac/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:24:5-26:41
+MERGED from [com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.8] /home/stomick/.gradle/caches/transforms-1/files-1.1/AlphabetIndex-Fast-Scroll-RecyclerView-1.0.8.aar/b51b8d23c7f32226839a0bd477aa1c63/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.8] /home/stomick/.gradle/caches/transforms-1/files-1.1/AlphabetIndex-Fast-Scroll-RecyclerView-1.0.8.aar/b51b8d23c7f32226839a0bd477aa1c63/AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.1.0.aar/46802a16dc743aee0cd5b265f4c32c84/AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.1.0.aar/46802a16dc743aee0cd5b265f4c32c84/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/ce092663e714ebca833c17997abaae52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/ce092663e714ebca833c17997abaae52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/0cdd45e375670ae75039e4b7af35646c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/0cdd45e375670ae75039e4b7af35646c/AndroidManifest.xml:20:5-44
+MERGED from [me.zhanghai.android.materialratingbar:library:1.3.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/62aa5c44a445aa42070b22c154dd0643/AndroidManifest.xml:11:5-13:41
+MERGED from [me.zhanghai.android.materialratingbar:library:1.3.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/62aa5c44a445aa42070b22c154dd0643/AndroidManifest.xml:11:5-13:41
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/926448178c0c468006f45c1c4c525ad5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.bogdwellers:pinchtozoom:0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/pinchtozoom-0.1.aar/926448178c0c468006f45c1c4c525ad5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/cbbffcbd1a9f9a28c896e6cfdc816759/AndroidManifest.xml:8:5-10:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/cbbffcbd1a9f9a28c896e6cfdc816759/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.silvestrpredko:dot-progress-bar:1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/dot-progress-bar-1.1.aar/766a068026f061cdfad13ebed69572d6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.silvestrpredko:dot-progress-bar:1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/dot-progress-bar-1.1.aar/766a068026f061cdfad13ebed69572d6/AndroidManifest.xml:7:5-9:41
+MERGED from [gun0912.ted:tedpermission-rx2:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-rx2-2.1.1.aar/9fd0e058a61cc0c998ed660ef63c0223/AndroidManifest.xml:5:5-7:41
+MERGED from [gun0912.ted:tedpermission-rx2:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-rx2-2.1.1.aar/9fd0e058a61cc0c998ed660ef63c0223/AndroidManifest.xml:5:5-7:41
+MERGED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:5:5-7:41
+MERGED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29605a03febbe0969e68eb158da7c1c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29605a03febbe0969e68eb158da7c1c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/0d407653f8509fe9db95f9597d8e048a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/0d407653f8509fe9db95f9597d8e048a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/22b0f6f801b29ab3db121db38652202e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/22b0f6f801b29ab3db121db38652202e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/fb9dc06c2bf35d0e75803351275f0c39/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/fb9dc06c2bf35d0e75803351275f0c39/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/cbd4684b12e0115a64c79b7554122242/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/cbd4684b12e0115a64c79b7554122242/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/68e6ba34ab858843ec48d9a5f827d53f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/68e6ba34ab858843ec48d9a5f827d53f/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/cd65ad3761af516abf24aff70b199db6/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/cd65ad3761af516abf24aff70b199db6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/bee9d089774fc8ebbe17e1a16bf2b669/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/bee9d089774fc8ebbe17e1a16bf2b669/AndroidManifest.xml:20:5-44
+MERGED from [com.github.alxrm:audiowave-progressbar:0.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/audiowave-progressbar-0.9.aar/3e301496b87d35e05c9b59b1e17b82eb/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.alxrm:audiowave-progressbar:0.9] /home/stomick/.gradle/caches/transforms-1/files-1.1/audiowave-progressbar-0.9.aar/3e301496b87d35e05c9b59b1e17b82eb/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:gridlayout-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-27.1.1.aar/33d26c66df2e928c4b0e998140a07459/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:gridlayout-v7:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-27.1.1.aar/33d26c66df2e928c4b0e998140a07459/AndroidManifest.xml:20:5-44
+MERGED from [ru.tinkoff.decoro:decoro:1.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/decoro-1.1.1.aar/7afba8b20cb75cb53502bef35033348f/AndroidManifest.xml:8:5-10:41
+MERGED from [ru.tinkoff.decoro:decoro:1.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/decoro-1.1.1.aar/7afba8b20cb75cb53502bef35033348f/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.liuguangqiang.swipeback:library:1.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/67f051f5d49ee87fadfa153b9f24094d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.liuguangqiang.swipeback:library:1.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/67f051f5d49ee87fadfa153b9f24094d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.nex3z:flow-layout:1.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/flow-layout-1.2.2.aar/2393be019652af889e7ec323947a4cb4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.nex3z:flow-layout:1.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/flow-layout-1.2.2.aar/2393be019652af889e7ec323947a4cb4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.dagger:dagger-android:2.11] /home/stomick/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/4af76546bacc659bc72696f15e09230d/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-android:2.11] /home/stomick/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/4af76546bacc659bc72696f15e09230d/AndroidManifest.xml:18:3-42
+MERGED from [com.github.pakoito:RxPaper2:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxPaper2-1.2.0.aar/d2219526f6eafdaa5f0f0928f14867e9/AndroidManifest.xml:27:5-29:41
+MERGED from [com.github.pakoito:RxPaper2:1.2.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxPaper2-1.2.0.aar/d2219526f6eafdaa5f0f0928f14867e9/AndroidManifest.xml:27:5-29:41
+MERGED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/d99afc1929f4ce4671478f683b61c0b9/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/d99afc1929f4ce4671478f683b61c0b9/AndroidManifest.xml:19:5-43
+MERGED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:7:5-9:41
+MERGED from [com.makeramen:roundedimageview:2.3.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/roundedimageview-2.3.0.aar/2674d08858a49ae2c5b097eb19f1429b/AndroidManifest.xml:7:5-43
+MERGED from [com.makeramen:roundedimageview:2.3.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/roundedimageview-2.3.0.aar/2674d08858a49ae2c5b097eb19f1429b/AndroidManifest.xml:7:5-43
+MERGED from [ru.rambler.android:swipe-layout:1.0.14] /home/stomick/.gradle/caches/transforms-1/files-1.1/swipe-layout-1.0.14.aar/d44ebd85915067ed73058590057cf0ec/AndroidManifest.xml:8:5-10:41
+MERGED from [ru.rambler.android:swipe-layout:1.0.14] /home/stomick/.gradle/caches/transforms-1/files-1.1/swipe-layout-1.0.14.aar/d44ebd85915067ed73058590057cf0ec/AndroidManifest.xml:8:5-10:41
+MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/subsampling-scale-image-view-3.10.0.aar/253a567b17261631216c53cc7d089774/AndroidManifest.xml:7:5-9:41
+MERGED from [com.davemorrissey.labs:subsampling-scale-image-view:3.10.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/subsampling-scale-image-view-3.10.0.aar/253a567b17261631216c53cc7d089774/AndroidManifest.xml:7:5-9:41
+MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4c495028d96e397aba5a4b7a060da902/AndroidManifest.xml:8:5-10:41
+MERGED from [net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/keyboardvisibilityevent-2.1.0.aar/4c495028d96e397aba5a4b7a060da902/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/4dd44b7ddb81815ca43a19ae3be875a8/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/4dd44b7ddb81815ca43a19ae3be875a8/AndroidManifest.xml:6:5-8:41
+MERGED from [com.wang.avi:library:2.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-2.1.3.aar/4433f80c6f3de15e96032ee5d280c697/AndroidManifest.xml:7:5-9:41
+MERGED from [com.wang.avi:library:2.1.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/library-2.1.3.aar/4433f80c6f3de15e96032ee5d280c697/AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-analyzer-1.5.4.aar/0614c0e68f313c17183df08590e89460/AndroidManifest.xml:21:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-analyzer-1.5.4.aar/0614c0e68f313c17183df08590e89460/AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/90efea934b0b53d553620ef3ab632a6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/90efea934b0b53d553620ef3ab632a6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/5f998ad14824e976a466d3aa7bbdc04a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/5f998ad14824e976a466d3aa7bbdc04a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/9ceff087733c100c21397ee311903055/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/9ceff087733c100c21397ee311903055/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/70db2ef4af803a5242206dae7025f1d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/70db2ef4af803a5242206dae7025f1d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/4543261f4930eddb7b55578cd8d73e0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/4543261f4930eddb7b55578cd8d73e0d/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-places:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/348be95aa51d201b98ad125650224f85/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-places-4.36.0.aar/348be95aa51d201b98ad125650224f85/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/9025b550fc182486e1cc6933278df5f7/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.36.0.aar/9025b550fc182486e1cc6933278df5f7/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/b46b31c973cfa8b744704cf73f398e0d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.36.0.aar/b46b31c973cfa8b744704cf73f398e0d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/64d03e7367f0355007c5a50e1000ce80/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/64d03e7367f0355007c5a50e1000ce80/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e5726c5b3befa42a8104690ca1589bb8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e5726c5b3befa42a8104690ca1589bb8/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/bf2aad80085223078092f92bc19d04fb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/bf2aad80085223078092f92bc19d04fb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:exifinterface:27.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/f4ee0a7982e40a047eb269a7c811f9d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.0.aar/f4ee0a7982e40a047eb269a7c811f9d4/AndroidManifest.xml:20:5-44
+MERGED from [io.paperdb:paperdb:2.6] /home/stomick/.gradle/caches/transforms-1/files-1.1/paperdb-2.6.aar/705998178c7a00f2bc93012ea4285e34/AndroidManifest.xml:8:5-10:41
+MERGED from [io.paperdb:paperdb:2.6] /home/stomick/.gradle/caches/transforms-1/files-1.1/paperdb-2.6.aar/705998178c7a00f2bc93012ea4285e34/AndroidManifest.xml:8:5-10:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/7fac6eea21d3be5c1cf3646fdd3608c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/7fac6eea21d3be5c1cf3646fdd3608c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5b112046e327dc39c77299841d6efca3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5b112046e327dc39c77299841d6efca3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.2.aar/7e5b6b4c3644d31771ebe9e7ebac99e7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-15.0.2.aar/7e5b6b4c3644d31771ebe9e7ebac99e7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b03e281a0a8db3417de03d85d41470c3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b03e281a0a8db3417de03d85d41470c3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/132e29e227421b8ba91b348653eaaeb8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/132e29e227421b8ba91b348653eaaeb8/AndroidManifest.xml:20:5-44
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+		ADDED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+		INJECTED from /home/stomick/work/avfofun/app/src/main/AndroidManifest.xml
+service#com.squareup.leakcanary.internal.HeapAnalyzerService
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:27:9-30:45
+	android:process
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:30:13-42
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:29:13-36
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:28:13-80
+service#com.squareup.leakcanary.DisplayLeakService
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:31:9-34:45
+	android:process
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:34:13-42
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:33:13-36
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:32:13-70
+activity#com.squareup.leakcanary.internal.DisplayLeakActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:36:9-49:20
+	android:process
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:41:13-42
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:38:13-36
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:40:13-71
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:39:13-54
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:43:13-63
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:42:13-76
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:37:13-80
+activity#com.squareup.leakcanary.internal.RequestStoragePermissionActivity
+ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:50:9-58:68
+	android:process
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:56:13-42
+	android:enabled
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:52:13-36
+	android:label
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:55:13-82
+	android:excludeFromRecents
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:53:13-46
+	android:icon
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:54:13-54
+	android:theme
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:58:13-65
+	android:taskAffinity
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:57:13-76
+	android:name
+		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] /home/stomick/.gradle/caches/transforms-1/files-1.1/leakcanary-android-1.5.4.aar/4f8c2839c7c733029cef33d0b043e8cc/AndroidManifest.xml:51:13-93
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/a9cef50935db1c2d90dc1d9b54de364a/AndroidManifest.xml:28:9-32
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/AndroidManifest.xml:29:13-82
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:35:9-39:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:35:9-39:19
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:27:18-89
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-15.0.0.aar/b5ede8ddaa5514bc8692fd4e63906ec8/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:29:9-33:20
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:29:9-33:20
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:34:9-42:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:44:9-47:40
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:35:9-38:40
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-15.0.2.aar/5d72bcab886cc935e2f3e2891d03202c/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-analytics-15.0.2.aar/ff39648050a0f0afc2d43c52c0e050d6/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:26:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:29:9-63
+permission#evfor.fun.skvader.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:32:22-76
+uses-permission#evfor.fun.skvader.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:32:22-76
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:37:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:41:9-50:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:43:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:44:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:42:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:45:13-49:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:evfor.fun.skvader
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:45:13-49:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:46:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:46:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:48:27-58
+category#evfor.fun.skvader
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:48:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:48:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:56:9-62:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-iid-15.1.0.aar/1c681b9f7cab79633420c29e0a576b2d/AndroidManifest.xml:57:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:8:9-12:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:11:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:12:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/123c6ade97728ebb29625195240ae586/AndroidManifest.xml:9:13-77
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:33:19-68
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:34:9-67
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-common-4.36.0.aar/ed2199c4f9117b050a3ecaf7ec4b2aee/AndroidManifest.xml:34:19-64
+activity#com.gun0912.tedpermission.TedPermissionActivity
+ADDED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:10:9-14:67
+	android:screenOrientation
+		ADDED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:13:13-52
+	android:configChanges
+		ADDED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:12:13-144
+	android:theme
+		ADDED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:14:13-64
+	android:name
+		ADDED from [gun0912.ted:tedpermission:2.1.1] /home/stomick/.gradle/caches/transforms-1/files-1.1/tedpermission-2.1.1.aar/3c8fc1e29ab5220261c34a97faa58232/AndroidManifest.xml:11:13-75
+activity#com.marchinram.rxgallery.RxGalleryActivity
+ADDED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:12:9-15:75
+	android:configChanges
+		ADDED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:14:13-74
+	android:theme
+		ADDED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:15:13-72
+	android:name
+		ADDED from [com.github.marchinram:RxGallery:0.6.3] /home/stomick/.gradle/caches/transforms-1/files-1.1/RxGallery-0.6.3.aar/ebb08892a37aebe70295cb7c0b0223dd/AndroidManifest.xml:13:13-70
+provider#android.support.v4.content.FileProvider
+ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:16:9-24:20
+	android:grantUriPermissions
+		ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:20:13-47
+	android:authorities
+		ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:18:13-65
+	android:exported
+		ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:17:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:21:13-23:54
+	android:resource
+		ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:23:17-51
+	android:name
+		ADDED from [com.mindorks:paracamera:0.2.2] /home/stomick/.gradle/caches/transforms-1/files-1.1/paracamera-0.2.2.aar/acbc75f4f5391f8f0cc09ae83c118830/AndroidManifest.xml:22:17-67
+provider#com.facebook.marketing.internal.MarketingInitProvider
+ADDED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:29:9-32:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:31:13-73
+	android:exported
+		ADDED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-marketing:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.36.0.aar/6aa2f807f5c63e9ab10afadf5f148740/AndroidManifest.xml:30:13-81
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.36.0] /home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-core-4.36.0.aar/a45a5461f6a947f0c34fd1725dce688b/AndroidManifest.xml:48:25-92

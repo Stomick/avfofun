@@ -6,6 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/last_background"
-    tools:context="com.team.noty.event.ui.activities.EmptyActivity">
+    tools:context="skvader.ui.activities.EmptyActivity">
 
 </FrameLayout>

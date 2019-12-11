@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.team.noty.event.ui.fragments.intro.SignupFragment">
+    tools:context="skvader.ui.fragments.intro.SignupFragment">
 
     <Button
         android:id="@+id/intro_vk_button"
