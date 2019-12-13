@@ -26,6 +26,7 @@ import evfor.fun.skvader.R;
 import evfor.fun.skvader.app.AuthData;
 import evfor.fun.skvader.models.ActId;
 import evfor.fun.skvader.models.Message;
+import evfor.fun.skvader.models.SockMessages;
 import evfor.fun.skvader.models.User;
 import evfor.fun.skvader.mvp.presenters.DialogPresenter;
 import evfor.fun.skvader.mvp.presenters.LoginPresenter;
@@ -100,25 +101,26 @@ public class DialogActivity extends BaseActivity implements MessageView {
 
         @Override
         public void call(Object... args) {
+
             Log.i("chat" , args.toString());
+            //for (int i= 0; i < args[0].;i )
+
+            int b =0;
         }
     }
     @Override
     protected void initViews(@Nullable Bundle savedInstanceState) {
         int room = getIntent().getIntExtra("room", 0);
-        int userId = getIntent().getIntExtra("id", 0);
         SocketChat socketChat = SocketChat.getInstance();
         JSONObject chObj = new JSONObject();
         try {
             chObj.put("roomId", room);
-            chObj.put("userId", userId);
         } catch (JSONException e) {
             e.printStackTrace();
         }
         if(socketChat.getChat() != null) {
             socketChat.getChat().emit("joinToRoom", chObj).on("message", new NewMessage());
         }
-        int b = 0;
         /*
         showLoad();
         inputPanel.setVisibility(View.GONE);

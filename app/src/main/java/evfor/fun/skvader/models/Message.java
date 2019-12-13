@@ -44,6 +44,7 @@ public class Message {
     {
         return status.equals(Status.READ);
     }
+
     public Message(String body, Type type) {
         this.body = body;
         this.type = type;

@@ -443,6 +443,7 @@ evfor/fun/skvader/ui/fragments/main/SearchTabFragment.class
 evfor/fun/skvader/ui/fragments/main/create/BaseCreateFragment.class
 evfor/fun/skvader/utils/ErrorHandler$ErrorDisplay.class
 evfor/fun/skvader/utils/notification/NotificationsUtils.class
+evfor/fun/skvader/utils/socket/SocketChat.class
 io/reactivex/Completable.class
 io/reactivex/CompletableSource.class
 io/reactivex/Flowable.class
@@ -471,6 +472,8 @@ io/reactivex/parallel/ParallelFlowable.class
 io/reactivex/processors/FlowableProcessor.class
 io/reactivex/processors/MulticastProcessor.class
 io/reactivex/schedulers/Schedulers.class
+io/socket/client/Socket.class
+io/socket/emitter/Emitter.class
 javax/annotation/CheckForNull.class
 javax/annotation/CheckForSigned.class
 javax/annotation/CheckReturnValue.class
