@@ -1,7 +1,7 @@
 package evfor.fun.skvader.utils.socket.models;
 
 public class ModelConnect {
-    private static final String EVENT = "evfor.fun.skvader";
+    private static final String EVENT = "event";
     private static final String COMMUNITY = "community";
     public String eventId;
     public String userId;
@@ -36,19 +36,19 @@ public class ModelConnect {
 
     public String audioEvent() {
         if (userId == null)
-            return "general-audio";
+            return "audio";
         else return "audio";
     }
 
     public String messageEvent() {
         if (userId == null)
-            return "general-message";
+            return "message";
         else return "message";
     }
 
     public String photoEvent() {
         if (userId == null)
-            return "general-photo";
+            return "photo";
         else return "photo";
     }
 
@@ -59,7 +59,7 @@ public class ModelConnect {
     }
 
     public String readEvent() {
-        return "read-messages";
+        return "messages";
     }
 
 }

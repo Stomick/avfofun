@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/stomick/work/avfofun/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "C:\\stom\\avfofun\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
             "map": [
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/29605a03febbe0969e68eb158da7c1c5/res/values-en-rGB/values-en-rGB.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
-                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
-                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,44",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,5254",
-                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
-                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,5331"
-                    }
-                },
-                {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/facebook-login-4.36.0.aar/bcecfc0583fa757c14cc4a1a961f0d02/res/values-en-rGB/values-en-rGB.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.36.0.aar\\0fa3cceb3f788823cc2181edf3158a55\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-places-15.0.1.aar/aa8492942003fc1dc7d93ff0f8b762f3/res/values-en-rGB/values.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
+                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
+                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,5254",
+                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
+                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,5331"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-15.0.1.aar\\4d2766d4968777e8502819d3420c9b43\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "0,0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e5726c5b3befa42a8104690ca1589bb8/res/values-en-rGB/values-en-rGB.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0d479b79492722bdda1084553c384f1a\\res\\values-en-rGB\\values-en-rGB.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -72,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/672559bd8dd1c18530b920ebeedc89c6/res/values-en-rGB/values.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-15.0.2.aar\\a6c2dfd5db746a95fb2f3c7dbd38f8d9\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -89,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/38c623e7c31232fb699f153772e05132/res/values-en-rGB/values.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\c119ca04e39c0d8e6f4e57946d90c99f\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -106,7 +106,7 @@
                     }
                 },
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/2eefcc7e2fad5d81b45ee372b233427a/res/values-en-rGB/values.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\de8f09aa77eea0b7844bc977d25ba1cc\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

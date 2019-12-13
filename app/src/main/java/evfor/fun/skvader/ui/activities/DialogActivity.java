@@ -10,18 +10,25 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.google.gson.JsonObject;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import evfor.fun.skvader.R;
 import evfor.fun.skvader.app.AuthData;
 import evfor.fun.skvader.models.ActId;
 import evfor.fun.skvader.models.Message;
 import evfor.fun.skvader.models.User;
 import evfor.fun.skvader.mvp.presenters.DialogPresenter;
+import evfor.fun.skvader.mvp.presenters.LoginPresenter;
 import evfor.fun.skvader.mvp.views.MessageView;
 import evfor.fun.skvader.ui.adapters.MessageAdapter;
 import evfor.fun.skvader.ui.dialogs.DialogProvider;
@@ -37,13 +44,15 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import evfor.fun.skvader.utils.socket.SocketChat;
 import io.reactivex.Maybe;
+import io.socket.emitter.Emitter;
 
 @SuppressLint("CheckResult")
 public class DialogActivity extends BaseActivity implements MessageView {
 
     private static final String ID = "id";
-
+    public String room_id;
     @InjectPresenter
     DialogPresenter presenter;
 
@@ -58,6 +67,8 @@ public class DialogActivity extends BaseActivity implements MessageView {
     private ImageView ava, ava1, ava2;
     public static boolean isNeedToConnect = true;
     public static String creator_name = null;
+
+
     public static void openDialog(Context context, String userID) {
         Intent i = intent(context, userID);
         if (i != null)
@@ -72,8 +83,12 @@ public class DialogActivity extends BaseActivity implements MessageView {
     }
 
     public static void openChat(Context context, ActId actId,String name,String id) {
+
         context.startActivity(new Intent(context, DialogActivity.class)
-                .putExtra(ActId.TAG, actId).putExtra("name",name).putExtra("id",id));
+                .putExtra(ActId.TAG, actId)
+                .putExtra("room", actId.room_id)
+                .putExtra("name",name)
+                .putExtra("id",id));
     }
 
     @Override
@@ -81,8 +96,30 @@ public class DialogActivity extends BaseActivity implements MessageView {
         return R.layout.activity_dialog;
     }
 
+    class NewMessage implements Emitter.Listener {
+
+        @Override
+        public void call(Object... args) {
+            Log.i("chat" , args.toString());
+        }
+    }
     @Override
     protected void initViews(@Nullable Bundle savedInstanceState) {
+        int room = getIntent().getIntExtra("room", 0);
+        int userId = getIntent().getIntExtra("id", 0);
+        SocketChat socketChat = SocketChat.getInstance();
+        JSONObject chObj = new JSONObject();
+        try {
+            chObj.put("roomId", room);
+            chObj.put("userId", userId);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if(socketChat.getChat() != null) {
+            socketChat.getChat().emit("joinToRoom", chObj).on("message", new NewMessage());
+        }
+        int b = 0;
+        /*
         showLoad();
         inputPanel.setVisibility(View.GONE);
         adapter = new MessageAdapter();
@@ -92,6 +129,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
         adapter.setOnPause(presenter::pausePlay);
         dialogMessageList.getItemAnimator().setChangeDuration(0);
         inputPanelHolder = new InputPanelHolder(inputPanel);
+        /*
         inputPanelHolder.setSendMessage(this::sendTextMessage);
         inputPanelHolder.setVoiceCallBack(
                 presenter::startRecord,
@@ -99,6 +137,9 @@ public class DialogActivity extends BaseActivity implements MessageView {
                 presenter::cancelRec);
         inputPanelHolder.setWriting()
                 .subscribe(v -> presenter.write());
+
+         */
+
     }
 
     @Override
@@ -115,7 +156,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
         if (extras.containsKey("id"))
             user_ids.add(extras.getString("id"));
         if (extras.containsKey(ActId.TAG)) {
-            adapter.isGeneral();
+//            adapter.isGeneral();
             act =(ActId) extras.getSerializable(ActId.TAG);
 
             presenter.loadUsers((ActId) extras.getSerializable(ActId.TAG));
@@ -261,13 +302,13 @@ public class DialogActivity extends BaseActivity implements MessageView {
 //            messages.get(i).status = Message.Status.READ;
 //        }
 
-        adapter.setMessages(messages);
-        scrollBot();
-        setReadMessages(messages);
+//        adapter.setMessages(messages);
+//        scrollBot();
+//        setReadMessages(messages);
     }
 
     private void scrollBot() {
-        dialogMessageList.scrollToPosition(dialogMessageList.getAdapter().getItemCount() - 1);
+        //dialogMessageList.scrollToPosition(dialogMessageList.getAdapter().getItemCount() - 1);
     }
 
     private void setReadMessages(List<Message> messages) {

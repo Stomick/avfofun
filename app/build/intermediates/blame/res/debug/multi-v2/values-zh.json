@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/stomick/work/avfofun/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "C:\\stom\\avfofun\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/cbbffcbd1a9f9a28c896e6cfdc816759/res/values-zh/values-zh.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\android-image-cropper-2.5.1.aar\\8d5a7f720cf3d80eb9626e565db81e34\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

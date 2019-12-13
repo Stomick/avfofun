@@ -15,6 +15,7 @@ public class UiFullEvent{
     public String where;
     public String count;
     public String price;
+    public String room_id;
     public String description;
     public String organizerId;
     public ActStatus status;

@@ -14,6 +14,7 @@ import evfor.fun.skvader.utils.socket.models.Writer;
 import io.reactivex.Completable;
 import io.reactivex.Observable;
 import io.reactivex.Single;
+import io.socket.client.Socket;
 import javax.inject.Provider;
 
 public final class SocketMessenger_MembersInjector implements MembersInjector<SocketMessenger> {

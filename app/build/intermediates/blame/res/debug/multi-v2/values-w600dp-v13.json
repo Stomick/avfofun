@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/stomick/work/avfofun/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "C:\\stom\\avfofun\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-v13\\values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/stomick/.gradle/caches/transforms-1/files-1.1/androidsdk-1.6.9.aar/a82be3a833ffcc9f4186c07a0486b7fe/res/values-w600dp-v13/values-w600dp-v13.xml",
+                    "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\41e042358a70ceeaacc88dfae1db8673\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

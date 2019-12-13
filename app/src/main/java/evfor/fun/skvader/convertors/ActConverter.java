@@ -28,6 +28,7 @@ public class ActConverter implements Converter<Act, RsAct> {
     public Act convert(RsAct rsAct) {
         Act act = rsAct.isEvent() ? new Event() : new Community();
         act.id = rsAct.getID();
+        act.room_id = Integer.valueOf(rsAct.room_id);
         act.longitude = rsAct.longitude;
         act.latitude = rsAct.latitude;
         act.address = rsAct.place;

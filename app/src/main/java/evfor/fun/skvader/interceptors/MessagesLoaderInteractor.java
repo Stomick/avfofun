@@ -28,7 +28,7 @@ public class MessagesLoaderInteractor implements Interactor<Observable<Message>,
     @Override
     public Observable<Message> call(RqChat rqChat) {
         return (rqChat.userId == null
-                ? api.getEventMessages(rqChat.actId.id(), rqChat.actId.type())
+                ? api.getEventMessages(rqChat.actId.id())
                 : api.getUserMessages(rqChat.actId.id(), rqChat.userId.id(), rqChat.actId.type()))
                 .flatMap(this::emptyHandle)
                 .map(this::convert);

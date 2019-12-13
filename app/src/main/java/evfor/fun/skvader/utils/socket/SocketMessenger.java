@@ -14,6 +14,7 @@ import evfor.fun.skvader.utils.socket.models.ModelConnect;
 import evfor.fun.skvader.utils.socket.models.SocketState;
 import evfor.fun.skvader.utils.socket.models.Writer;
 
+import java.net.URISyntaxException;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -21,10 +22,15 @@ import javax.inject.Inject;
 import io.reactivex.Completable;
 import io.reactivex.Observable;
 import io.reactivex.Single;
+import io.socket.client.IO;
+import io.socket.client.Socket;
 
 import static evfor.fun.skvader.ui.activities.DialogActivity.isNeedToConnect;
 
 public class SocketMessenger {
+
+    private static SocketMessenger chatSocket;
+
     @Inject
     iSocketListener<Observable<Message>> messageObserver;
     @Inject
@@ -42,7 +48,20 @@ public class SocketMessenger {
     @Inject
     Socket socket;
 
+    public static void initInstance() {
+        Log.d("MY", "MySingleton::InitInstance()");
+        if (chatSocket == null) {
+            chatSocket = new SocketMessenger();
+        }
+    }
+
+    public static SocketMessenger getInstance() {
+        Log.d("MY", "MySingleton::getInstance()");
+        return chatSocket;
+    }
+
     public void init(String eventId, String userId, boolean isEvent) {
+
         Injector.get().getChatComponent(new ModelConnect(eventId, userId, isEvent)).inject(this);
     }
 
@@ -99,9 +118,20 @@ public class SocketMessenger {
 
     public void readMessages(List<String> messagesIds, String userId) {
         readMessages.call(new MessageRead(userId, messagesIds))
-                .subscribe(() ->{
-                },throwable -> {
-                    Log.e("my",throwable.getMessage());
+                .subscribe(() -> {
+                }, throwable -> {
+                    Log.e("my", throwable.getMessage());
                 });
     }
+
+    public void setSocket(String str){
+        try {
+            socket = IO.socket(str);
+            Log.e("my", socket.id());
+        } catch (URISyntaxException e) {
+            Log.e("my", e.getMessage());
+
+        }
+    }
+
 }

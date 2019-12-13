@@ -17,8 +17,9 @@ import retrofit2.http.Query;
 public interface ChatApi {
 
     @GET(URLS.EventMessages)
-    Observable<List<RsMessage>> getEventMessages(@Path("eventId") String eventId,
-                                                 @Query("type") String type);
+    Observable<List<RsMessage>> getEventMessages(@Path("eventId") String eventId);
+    @GET(URLS.CommunityMessages)
+    Observable<List<RsMessage>> getCommunityMessages(@Path("eventId") String eventId);
 
     @GET(URLS.PrivateMessages)
     Observable<List<RsMessage>> getUserMessages(@Path("eventId") String joinEventId,

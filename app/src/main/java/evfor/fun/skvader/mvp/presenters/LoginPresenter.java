@@ -4,9 +4,13 @@ import android.annotation.SuppressLint;
 import android.util.Log;
 
 import com.arellomobile.mvp.InjectViewState;
+
+import java.net.URISyntaxException;
+
 import evfor.fun.skvader.app.AuthData;
 import evfor.fun.skvader.app.Injector;
 import evfor.fun.skvader.mvp.views.LoginView;
+import evfor.fun.skvader.network.URLS;
 import evfor.fun.skvader.network.api.LoginApi;
 import evfor.fun.skvader.network.models.request.RqLogin;
 import evfor.fun.skvader.network.models.response.RsLogin;
@@ -15,8 +19,12 @@ import evfor.fun.skvader.utils.social.SocialProfileManager;
 
 import javax.inject.Inject;
 
+import evfor.fun.skvader.utils.socket.SocketChat;
+import evfor.fun.skvader.utils.socket.Socket;
+import evfor.fun.skvader.utils.socket.SocketMessenger;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.socket.client.IO;
 
 @InjectViewState
 public class LoginPresenter extends BasePresenter<LoginView> {

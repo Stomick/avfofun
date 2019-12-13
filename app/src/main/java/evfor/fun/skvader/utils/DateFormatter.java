@@ -148,7 +148,7 @@ public class DateFormatter {
 
     public static Date fromIso(String iso) {
         TimeZone tz = TimeZone.getTimeZone("UTC");
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault());
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
         df.setTimeZone(tz);
         try {
             return df.parse(iso);

@@ -9,12 +9,21 @@ public class ActId implements Identified, Serializable {
 
     public String id = "";
     public boolean isEvent;
+    public Integer room_id;
+
     public ActId() {
     }
 
     public ActId(String id, boolean isEvent) {
         this.id = id;
         this.isEvent = isEvent;
+        //this.room_id = Integer.valueOf(room_id);
+    }
+
+    public ActId(String id, boolean isEvent , String room_id) {
+        this.id = id;
+        this.isEvent = isEvent;
+        this.room_id = Integer.valueOf(room_id);
     }
 
     @Override
@@ -31,7 +40,7 @@ public class ActId implements Identified, Serializable {
     }
 
     public String type() {
-        return isEvent ? "evfor.fun.skvader" : "community";
+        return isEvent ? "events" : "community";
     }
 
     public boolean isEvent(){

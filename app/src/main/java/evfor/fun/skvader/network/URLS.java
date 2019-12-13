@@ -19,12 +19,13 @@ public final class URLS {
     public static final String EventDetails = "events";
     public static final String CommunityDetails = "community";
     public static final String Filter = "filter";
-    public static final String EventMessages = "events/{eventId}/messages";
-    public static final String PrivateMessages = "events/{eventId}/users/{userId}/messages";
+    public static final String EventMessages = "event/{eventId}";
+    public static final String CommunityMessages = "community/{eventId}";
+    public static final String PrivateMessages = "user/{userId}";
     public static final String EnterEvent = "entertoevent";
     public static final String EnterCommunity = "entertocommunity";
-    public static final String ChatBase = domain + "chat/";
-    public static final String ChatBaseSocket = "https://evfor.fun";
+    public static final String ChatBase = domain + "/chat/";
+    public static final String ChatBaseSocket = "https://evfor.fun:3000/";
     public static final String GetNotification = "getnotification";
     public static final String SetNotification = "setnotification";
     public static final String DeleteEvent = "deleteevent";

@@ -13,6 +13,7 @@ public class RsAct {
     public String end_time;
     public List<String> visiting_days;
     public Integer price;
+    public String room_id;
     public String video;
     public Integer max_count;
     public Integer age_limit;

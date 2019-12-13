@@ -17,6 +17,7 @@ public class UiEvent implements Comparable<UiEvent> {
     public String date;
     public List<String> visits_days;
     public String times;
+    public String room_id;
     public String address;
     public String price;
     public int already;

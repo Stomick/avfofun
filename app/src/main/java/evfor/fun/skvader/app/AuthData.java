@@ -4,6 +4,7 @@ import evfor.fun.skvader.models.User;
 import evfor.fun.skvader.utils.AccountPreferenceManager;
 import evfor.fun.skvader.utils.StringUtils;
 
+
 public class AuthData {
     public static String token;
     public static String id;
@@ -49,4 +50,6 @@ public class AuthData {
     public static boolean checkToken() {
         return Injector.get().getApp().accountPreferenceManager().checkValue(AccountPreferenceManager.TOKEN);
     }
+
+
 }

@@ -146,8 +146,6 @@ import evfor.fun.skvader.utils.media.record.AudioRecorderImpl;
 import evfor.fun.skvader.utils.media.record.AudioRecorderImpl_Factory;
 import evfor.fun.skvader.utils.notification.NotificationsUtils;
 import evfor.fun.skvader.utils.notification.NotificationsUtils_MembersInjector;
-import evfor.fun.skvader.utils.socket.SocketImpl;
-import evfor.fun.skvader.utils.socket.SocketImpl_Factory;
 import evfor.fun.skvader.utils.socket.SocketMessenger;
 import evfor.fun.skvader.utils.socket.SocketMessenger_MembersInjector;
 import evfor.fun.skvader.utils.socket.listeners.MessageReadListener;
@@ -1122,10 +1120,6 @@ public final class DaggerMainComponent implements MainComponent {
 
     private Provider<Interactor<Completable, MessageRead>> readMessagesProvider;
 
-    private Provider<SocketImpl> socketImplProvider;
-
-    private Provider<evfor.fun.skvader.utils.socket.Socket> provideSocketProvider;
-
     private MembersInjector<SocketMessenger> socketMessengerMembersInjector;
 
     private ChatSubComponentImpl(ChatModule chatModule) {
@@ -1202,10 +1196,6 @@ public final class DaggerMainComponent implements MainComponent {
 
       this.readMessagesProvider = DoubleCheck.provider((Provider) readingInteractorProvider);
 
-      this.socketImplProvider = SocketImpl_Factory.create(provideSocketClientProvider);
-
-      this.provideSocketProvider = DoubleCheck.provider((Provider) socketImplProvider);
-
       this.socketMessengerMembersInjector =
           SocketMessenger_MembersInjector.create(
               messageObserverProvider,
@@ -1215,7 +1205,7 @@ public final class DaggerMainComponent implements MainComponent {
               writeListenerProvider,
               writingProvider,
               readMessagesProvider,
-              provideSocketProvider);
+              provideSocketClientProvider);
     }
 
     @Override

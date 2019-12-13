@@ -100,13 +100,12 @@ public class DialogPresenter extends BasePresenter<MessageView> {
                 .flatMapObservable(this::messageLoader)
                 .toList()
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getViewState()::loadMessage,
-                        this::errorHandler);
+                .subscribe(getViewState()::loadMessage);
     }
 
     private void errorHandler(Throwable throwable){
         //if(throwable instanceof NoJointActsException)
-            getViewState().notCanWrite();
+            //getViewState().notCanWrite();
     }
 
     private void setCurrent(User current) {
@@ -135,7 +134,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
                 .andThen(messageLoader(new RqChat(actId)))
                 .toList()
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getViewState()::loadMessage,this::errorHandler);
+                .subscribe(getViewState()::loadMessage);
     }
 
     private Observable<Message> messageLoader(RqChat rqChat) {
@@ -143,7 +142,11 @@ public class DialogPresenter extends BasePresenter<MessageView> {
             messenger.init(rqChat.actId.id(), String.valueOf(current.id), rqChat.actId.isEvent);
         else
             messenger.init(rqChat.actId.id(), rqChat.actId.isEvent);
-        connect();
+        onStatus();
+        onMessage();
+        onReadMessage();
+        onWrite();
+        messenger.connect();
         return messagesLoader.call(rqChat);
     }
 
@@ -157,14 +160,6 @@ public class DialogPresenter extends BasePresenter<MessageView> {
             users = new ArrayList<>();
         if (!users.contains(user))
             users.add(user);
-    }
-
-    private void connect() {
-        onStatus();
-        onMessage();
-        onReadMessage();
-        onWrite();
-        messenger.connect();
     }
 
     private void onStatus() {
@@ -194,7 +189,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
     private void onWrite() {
         messenger.writeObserver()
                 .observeOn(AndroidSchedulers.mainThread())
-                .map(Writer::id)
+                    .map(Writer::id)
                 .subscribe(getViewState()::write);
     }
 

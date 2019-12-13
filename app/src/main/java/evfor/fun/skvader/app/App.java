@@ -15,6 +15,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.pacoworks.rxpaper2.RxPaperBook;
 import evfor.fun.skvader.R;
+import evfor.fun.skvader.network.URLS;
 import evfor.fun.skvader.network.api.LoginApi;
 import evfor.fun.skvader.network.models.request.RqFBToken;
 import evfor.fun.skvader.utils.notification.NotificationsUtils;
@@ -22,6 +23,8 @@ import com.vk.sdk.VKSdk;
 
 import javax.inject.Inject;
 
+import evfor.fun.skvader.utils.socket.SocketChat;
+import evfor.fun.skvader.utils.socket.SocketMessenger;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
@@ -59,7 +62,12 @@ public class App extends Application {
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
         VKSdk.initialize(this);
-
+        String token = AuthData.getToken();
+        SocketChat socketChat = SocketChat.getInstance();
+        if(token != null){
+            socketChat.provideSocketChat(URLS.ChatBaseSocket + "?token=" + token);
+        }
+        int b = 0;
         //startService(new Intent(this,MessagesService.class));
         //startService(new Intent(this,TokenRefresh.class));
     }

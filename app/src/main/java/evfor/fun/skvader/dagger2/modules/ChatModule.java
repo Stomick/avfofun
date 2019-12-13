@@ -39,7 +39,7 @@ public class ChatModule {
     IO.Options provideSocketClientOptions() {
         IO.Options options = new IO.Options();
         if (model != null)
-            options.query = "token=" + AuthData.getToken() + "&eventId=" + model.eventId + "&type=" + model.getType();
+            options.query = "token=" + AuthData.getToken();
         options.secure = true;
         return options;
     }
