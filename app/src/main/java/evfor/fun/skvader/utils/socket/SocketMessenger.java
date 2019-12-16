@@ -116,7 +116,7 @@ public class SocketMessenger {
         writing.call().subscribe();
     }
 
-    public void readMessages(List<String> messagesIds, String userId) {
+    public void readMessages(List<String> messagesIds, Integer userId) {
         readMessages.call(new MessageRead(userId, messagesIds))
                 .subscribe(() -> {
                 }, throwable -> {

@@ -20,6 +20,8 @@ import android.widget.TextView;
 
 import evfor.fun.skvader.R;
 import evfor.fun.skvader.app.AuthData;
+import evfor.fun.skvader.models.SockMessage;
+import evfor.fun.skvader.models.SockMessages;
 import evfor.fun.skvader.ui.activities.DialogActivity;
 import evfor.fun.skvader.ui.activities.PhotoViewActivity;
 import evfor.fun.skvader.models.Message;
@@ -40,35 +42,29 @@ import io.reactivex.schedulers.Schedulers;
 
 public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
 
-    private List<Message> messages;
+    private List<SockMessage> messages;
     private CallBack1<String> onPlay;
     private CallBack onPause;
-    private Message isPlaingView;
-    private Message write;
+    private SockMessage isPlaingView;
+    private SockMessage write;
     private Disposable writing;
     private boolean general = false;
 
     public MessageAdapter() {
         messages = new ArrayList<>();
-        write = Message.wrtite();
+        write = SockMessage.wrtite();
     }
 
     public void isGeneral() {
         this.general = true;
     }
 
-    public void setMessages(List<Message> messages) {
+    public void setMessages(List<SockMessage> messages) {
         this.messages = messages;
         notifyDataSetChanged();
     }
 
     public void write(String userId) {
-        if (!messages.contains(write)) {
-            messages.add(write);
-            notifyItemInserted(messages.indexOf(write));
-        }
-        if (writing != null && !writing.isDisposed())
-            writing.dispose();
         writing = Completable.complete()
                 .delay(1, TimeUnit.SECONDS)
                 .subscribeOn(Schedulers.computation())
@@ -81,18 +77,6 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
         messages.remove(write);
     }
 
-    public void setProgressPlay(int current, int max) {
-        if (isPlaingView != null) {
-            isPlaingView.playProgress = current;
-            isPlaingView.maxProgress = max;
-            notifyItemChanged(messages.indexOf(isPlaingView));
-            if (current < 0) {
-                isPlaingView.isPlayng = false;
-                isPlaingView = null;
-
-            }
-        }
-    }
 
     public void setOnPlay(CallBack1<String> onPlay) {
         this.onPlay = onPlay;
@@ -102,27 +86,20 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
         this.onPause = onPause;
     }
 
-    public void newMessage(Message message) {
-        messages.add(message);
-        notifyItemInserted(
-                messages.indexOf(message)
-        );
-    }
+    public void newMessage(SockMessage message) {
+         messages.add(message);
+         notifyItemInserted(messages.indexOf(message));
+   }
 
-    public void update(Message message) {
-        for (Message m : messages) {
-            if (m.equals(message)) {
-                m.update(message);
-                notifyItemChanged(messages.indexOf(m));
-                m.updateId = -1;
-                return;
-            }
-        }
+    public void update(SockMessage message) {
+
     }
 
     @Override
     public int getItemViewType(int position) {
-        Message message = messages.get(position);
+
+        SockMessage message = messages.get(position);
+/*
         switch (message.type) {
             case TEXT:
                 return R.layout.message_text;
@@ -132,8 +109,8 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
                 return R.layout.message_voice;
             case WRITE:
                 return R.layout.message_writing;
-        }
-        return 0;
+        }*/
+        return R.layout.message_text;
     }
 
     @NonNull
@@ -198,18 +175,20 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
 
         @Override
         void bind(int pos) {
-            if (AuthData.equalId(messages.get(pos).sender))
+            if(AuthData.equalId(messages.get(pos).user_id)){
                 setFromMe();
-            else setFromHis();
+            }else {
+                setFromHis();
+            }
             setName(messages.get(pos));
-            if (general && !messages.get(pos).fromMe())
-                nameView.setVisibility(View.VISIBLE);
-            else nameView.setVisibility(View.GONE);
+            if (AuthData.equalId(messages.get(pos).user_id))
+                nameView.setVisibility(View.GONE);
+            else nameView.setVisibility(View.VISIBLE);
             setStatus(messages.get(pos));
             separatorOption();
         }
 
-        private void setName(Message message) {
+        private void setName(SockMessage message) {
             if (message.notHasUser()) {
                 if (DialogActivity.creator_name != null)
                     nameView.setText(DialogActivity.creator_name);
@@ -222,34 +201,15 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
         }
 
         private void separatorOption() {
-            int i = getAdapterPosition();
-            if (i > 0
-                    && !(messages.get(i - 1).date != null
-                    && DateFormatter.differenceLessMinute(messages.get(i).date, messages.get(i - 1).date))
-                    || i == 0) {
-                separator.setVisibility(View.VISIBLE);
-                separator.setText(DateFormatter.toString(messages.get(i).date));
-            } else separator.setVisibility(View.GONE);
+            separator.setVisibility(View.GONE);
         }
 
-        private void setStatus(Message message) {
-            if (message.status != null && message.fromMe()) {
-                switch (message.status) {
-                    case DELIVER:
+        private void setStatus(SockMessage message) {
+            if (message.status != null && AuthData.equalId(message.user_id)) {
+                if(message.status !=0) {
                         status.setText(itemView.getContext().getResources().getString(R.string.delivered));
                         bg.setBackgroundResource(R.drawable.message_bg_fromme);
-                        break;
-                    case READ:
-                        status.setText(itemView.getContext().getResources().getString(R.string.read));
-                        bg.setBackgroundResource(R.drawable.message_bg_read);
-                        break;
-                    default:
-                        status.setText(itemView.getContext().getResources().getString(R.string.sending));
-                        bg.setBackgroundResource(R.drawable.message_bg_fromme);
-                        break;
                 }
-                if(message.type.equals(Message.Type.VOICE))
-                    bg.setBackgroundResource(R.drawable.message_bg);
                 status.setVisibility(View.VISIBLE);
             } else {
                 status.setVisibility(View.GONE);
@@ -281,7 +241,7 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
         @Override
         void bind(int pos) {
             super.bind(pos);
-            textView.setText(htmlShow(messages.get(pos).body));
+            textView.setText(messages.get(pos).text);
         }
 
         private Spanned htmlShow(String htmlAsString) {
@@ -290,14 +250,15 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
 
         @Override
         protected void setFromMe() {
-            super.setFromMe();
-            textView.setTextColor(Color.WHITE);
+            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) bg.getLayoutParams();
+            layoutParams.gravity = Gravity.RIGHT;
+            bg.setLayoutParams(layoutParams);
         }
 
-        @Override
         protected void setFromHis() {
-            super.setFromHis();
-            textView.setTextColor(Color.BLACK);
+            LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) bg.getLayoutParams();
+            layoutParams.gravity = Gravity.LEFT;
+            bg.setLayoutParams(layoutParams);
         }
     }
 
@@ -311,14 +272,14 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
                 imageView.setMaxWidth(maxW);
             imageView.setOnClickListener(
                     view ->
-                            PhotoViewActivity.openImage(view.getContext(), messages.get(getAdapterPosition()).body));
+                            PhotoViewActivity.openImage(view.getContext(), messages.get(getAdapterPosition()).text));
         }
 
         @Override
         void bind(int pos) {
             super.bind(pos);
-            ImageLoader.clearCashUrl(messages.get(pos).body);
-            ImageLoader.loadImage(messages.get(pos).body, imageView);
+            ImageLoader.clearCashUrl(messages.get(pos).text);
+            ImageLoader.loadImage(messages.get(pos).text, imageView);
         }
     }
 
@@ -350,6 +311,7 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
         }
 
         private void onClick(View ignore) {
+            /*
             if (isPlaingView != null && !isPlaingView.equals(messages.get(getAdapterPosition())))
                 resetAudioView(isPlaingView);
             isPlaingView = messages.get(getAdapterPosition());
@@ -362,7 +324,7 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
                 onPause.call();
                 isPlaingView.isPlayng = false;
             }
-            playBox.setChecked(isPlaingView.isPlayng);
+            playBox.setChecked(isPlaingView.isPlayng);*/
         }
 
         @Override

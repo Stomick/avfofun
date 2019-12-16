@@ -15,6 +15,7 @@ import evfor.fun.skvader.models.ActAdmin;
 import evfor.fun.skvader.models.ActId;
 import evfor.fun.skvader.models.Message;
 import evfor.fun.skvader.models.RqChat;
+import evfor.fun.skvader.models.SockMessage;
 import evfor.fun.skvader.models.User;
 import evfor.fun.skvader.mvp.views.MessageView;
 import evfor.fun.skvader.repository.Identified;
@@ -90,6 +91,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
     }
 
     public void loadUser(String id) {
+        /*
         profileLoader.request(StringUtils.toIntOr0(id))
                 .doOnSuccess(this::setCurrent)
                 .observeOn(AndroidSchedulers.mainThread())
@@ -100,7 +102,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
                 .flatMapObservable(this::messageLoader)
                 .toList()
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getViewState()::loadMessage);
+                .subscribe(getViewState()::loadMessage);*/
     }
 
     private void errorHandler(Throwable throwable){
@@ -115,6 +117,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
     public void loadUsers(ActId actId) {
 
         joinActId = actId;
+        /*
         usersLoader.call(new ActAdmin(actId.id(), actId.isEvent, false))
                 //load users
                 .doOnNext(this::addUser)
@@ -135,6 +138,8 @@ public class DialogPresenter extends BasePresenter<MessageView> {
                 .toList()
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(getViewState()::loadMessage);
+
+         */
     }
 
     private Observable<Message> messageLoader(RqChat rqChat) {
@@ -179,11 +184,12 @@ public class DialogPresenter extends BasePresenter<MessageView> {
     }
 
     private void onReadMessage() {
+        /*
         subIoObsMain(messenger.readMessageObservable())
                 .map(messageListReaded -> messageListReaded.messages)
                 .flatMap(Observable::fromIterable)
                 .map(s -> new Message(s, Message.Status.READ))
-                .subscribe(s -> getViewState().updateMessage(s), this::onError);
+                .subscribe(s -> getViewState().updateMessage(s), this::onError);*/
     }
 
     private void onWrite() {
@@ -194,10 +200,11 @@ public class DialogPresenter extends BasePresenter<MessageView> {
     }
 
     private void onMessage() {
+        /*
         subIoObsMain(messenger.messageObservable())
                 .doOnNext(this::setName)
                 .subscribe(
-                        uiMessage -> getViewState().newMessage(uiMessage), this::onError);
+                        uiMessage -> getViewState().newMessage(uiMessage), this::onError);*/
     }
 
     private void setName(Message message) throws NotFoundException {
@@ -219,7 +226,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
     }
 
     private void sentMessageHandle(Single<MessageReceive> messageReceiveSingle) {
-        messageReceiveSingle
+        /*messageReceiveSingle
                 .map(messageReceive -> new Message(
                         messageReceive.messageId,
                         messageReceive.update,
@@ -227,7 +234,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
                         Message.Type.TEXT))
                 .doOnSuccess(Message::toDeliver)
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getViewState()::updateMessage, super::onError);
+                .subscribe(getViewState()::updateMessage, super::onError);*/
     }
 
     public int createId() {
@@ -250,17 +257,12 @@ public class DialogPresenter extends BasePresenter<MessageView> {
     }
 
     private Single<MessageReceive> sendVoice(Pair<byte[], String> pair) {
-        Message message = new Message();
-        message.status = Message.Status.SEND;
-        message.type = Message.Type.VOICE;
-        message.updateId = createId();
-        message.body = pair.getRight();
-        message.sender = AuthData.getID();
+        SockMessage message = new SockMessage();
         Single.just(message)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(getViewState()::newMessage);
         return messenger
-                .sendVoiceMessage(pair.getLeft(), message.updateId);
+                .sendVoiceMessage(pair.getLeft(), message.status);
     }
 
     public void cancelRec() {
@@ -308,7 +310,7 @@ public class DialogPresenter extends BasePresenter<MessageView> {
         return audioPlayer.onPlay();
     }
 
-    public void readMessages(List<Message> messages) {
+    public void readMessages(List<SockMessage> messages) {
         Observable.fromIterable(createPacks(messages))
                 .doOnNext(
                         readMessagePack -> messenger.readMessages(readMessagePack.messageIds, readMessagePack.userId))
@@ -320,20 +322,20 @@ public class DialogPresenter extends BasePresenter<MessageView> {
                         thr ->Log.e("my",thr.getMessage()));
     }
 
-    private List<ReadMessagePack> createPacks(List<Message> messages) {
+    private List<ReadMessagePack> createPacks(List<SockMessage> messages) {
         List<ReadMessagePack> packs = new ArrayList<>();
-        for (Message m : messages) {
-            ReadMessagePack p = getById(packs, m.sender);
+        for (SockMessage m : messages) {
+            ReadMessagePack p = getById(packs, m.user_id);
             if (p == null) {
-                p = new ReadMessagePack(m.sender);
+                p = new ReadMessagePack(m.user_id);
                 packs.add(p);
             }
-            p.messageIds.add(m.id);
+            p.messageIds.add(m.message_id.toString());
         }
         return packs;
     }
 
-    private ReadMessagePack getById(List<ReadMessagePack> packs, String userId) {
+    private ReadMessagePack getById(List<ReadMessagePack> packs, Integer userId) {
         for (ReadMessagePack p : packs)
             if (p.userId.equals(userId))
                 return p;
@@ -342,9 +344,9 @@ public class DialogPresenter extends BasePresenter<MessageView> {
 
     private class ReadMessagePack {
         List<String> messageIds;
-        String userId;
+        Integer userId;
 
-        ReadMessagePack(String userId) {
+        ReadMessagePack(Integer userId) {
             this.userId = userId;
             this.messageIds = new ArrayList<>();
         }

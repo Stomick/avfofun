@@ -4,6 +4,25 @@ import com.google.gson.annotations.SerializedName;
 
 public class SockMessage {
 
+    public int playProgress = 0;
+    public int maxProgress = 0;
+
+    public boolean fromMe() {
+        return true;
+    }
+
+    public boolean notHasUser() {
+        return name == null || name.isEmpty();
+    }
+
+    public enum Status {
+        DELIVER, READ, SEND
+    }
+
+    public enum Type {
+        TEXT, IMAGE, VOICE, WRITE
+    }
+
     @SerializedName("user_id")
     public Integer user_id;
 
@@ -28,4 +47,11 @@ public class SockMessage {
     @SerializedName("text")
     public String text;
 
+    public SockMessage.Type type;
+
+    public static SockMessage wrtite() {
+        SockMessage message = new SockMessage();
+        message.type = SockMessage.Type.WRITE;
+        return message;
+    }
 }

@@ -17,8 +17,11 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.arellomobile.mvp.presenter.InjectPresenter;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,6 +29,7 @@ import evfor.fun.skvader.R;
 import evfor.fun.skvader.app.AuthData;
 import evfor.fun.skvader.models.ActId;
 import evfor.fun.skvader.models.Message;
+import evfor.fun.skvader.models.SockMessage;
 import evfor.fun.skvader.models.SockMessages;
 import evfor.fun.skvader.models.User;
 import evfor.fun.skvader.mvp.presenters.DialogPresenter;
@@ -102,14 +106,27 @@ public class DialogActivity extends BaseActivity implements MessageView {
         @Override
         public void call(Object... args) {
 
-            Log.i("chat" , args.toString());
-            //for (int i= 0; i < args[0].;i )
+            Gson gson = new GsonBuilder().create();
+            String bs = args[0].toString();
+            SockMessages mess = gson.fromJson(args[0].toString(),SockMessages.class);
+            if(mess != null) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Log.i("logs", mess.messages.toString());
+                        adapter.setMessages(mess.messages);
+                    }
+                });
 
-            int b =0;
+               setReadMessages(mess.messages);
+            }
+
         }
+
     }
     @Override
     protected void initViews(@Nullable Bundle savedInstanceState) {
+        adapter = new MessageAdapter();
         int room = getIntent().getIntExtra("room", 0);
         SocketChat socketChat = SocketChat.getInstance();
         JSONObject chObj = new JSONObject();
@@ -121,27 +138,21 @@ public class DialogActivity extends BaseActivity implements MessageView {
         if(socketChat.getChat() != null) {
             socketChat.getChat().emit("joinToRoom", chObj).on("message", new NewMessage());
         }
-        /*
-        showLoad();
-        inputPanel.setVisibility(View.GONE);
-        adapter = new MessageAdapter();
         RecyclerUtils.setMessageList(dialogMessageList, adapter);
+        //inputPanel.setVisibility(View.GONE);
+        inputPanelHolder = new InputPanelHolder(inputPanel);
+        inputPanelHolder.setWriting()
+                .subscribe(v -> presenter.write());
+        dialogMessageList.getItemAnimator().setChangeDuration(0);
+        /*
+        adapter = new MessageAdapter();
+
         isNeedToConnect = true;
         adapter.setOnPlay(presenter::play);
         adapter.setOnPause(presenter::pausePlay);
-        dialogMessageList.getItemAnimator().setChangeDuration(0);
-        inputPanelHolder = new InputPanelHolder(inputPanel);
-        /*
-        inputPanelHolder.setSendMessage(this::sendTextMessage);
-        inputPanelHolder.setVoiceCallBack(
-                presenter::startRecord,
-                presenter::sendRecord,
-                presenter::cancelRec);
-        inputPanelHolder.setWriting()
-                .subscribe(v -> presenter.write());
-
-         */
-
+        */
+        //showLoad();
+        //hideLoad();
     }
 
     @Override
@@ -257,18 +268,18 @@ public class DialogActivity extends BaseActivity implements MessageView {
     }
 
     private void takeAndSendPhoto(Maybe<Uri> maybe) {
-        maybe
+        /*maybe
                 .map(this::newImageMessage)
                 .subscribe(this::sendImageMessage,
                         throwable -> {
                             DialogProvider.infoOk(this, throwable.getMessage()).show();
                             throwable.printStackTrace();
-                        });
+                        });*/
     }
 
-    private void sendImageMessage(Message m) {
+    private void sendImageMessage(SockMessage m) {
         newMessage(m);
-        presenter.sendPhoto(RealPathUtil.getRealPath(this, Uri.parse(m.body)), m.updateId);
+        //presenter.sendPhoto(RealPathUtil.getRealPath(this, Uri.parse(m.text)), m.updateId);
     }
 
     private Message newImageMessage(Uri uri) {
@@ -280,12 +291,12 @@ public class DialogActivity extends BaseActivity implements MessageView {
     private void sendTextMessage(String message) {
         Message m = new Message(message, Message.Type.TEXT);
         m.updateId = presenter.createId();
-        newMessage(m);
+        //newMessage(m);
         presenter.sendMessage(message, m.updateId);
     }
-
+/*
     @Override
-    public void loadMessage(List<Message> messages) {
+    public void loadMessage(List<SockMessage> messages) {
         hideLoad();
         if (users!=null)
         for(int i=0;i<messages.size();i++)
@@ -293,7 +304,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
 
             for (User user:users)
             {
-                if(messages.get(i).sender.equals(user.id()))
+                if(messages.get(i).user_id.equals(user.id()))
                 {
                       messages.get(i).name = user.firstname;
                 }
@@ -304,20 +315,19 @@ public class DialogActivity extends BaseActivity implements MessageView {
 //            messages.get(i).status = Message.Status.READ;
 //        }
 
-//        adapter.setMessages(messages);
-//        scrollBot();
-//        setReadMessages(messages);
+        adapter.setMessages(messages);
+        scrollBot();
+        setReadMessages(messages);
     }
-
+*/
     private void scrollBot() {
-        //dialogMessageList.scrollToPosition(dialogMessageList.getAdapter().getItemCount() - 1);
+        dialogMessageList.scrollToPosition(dialogMessageList.getAdapter().getItemCount() - 1);
     }
 
-    private void setReadMessages(List<Message> messages) {
-        List<Message> readMessages = new ArrayList<>();
-        for (Message m : messages)
-            if(m.status!=null) {
-                if (!m.isRead() && !m.sender.equals(AuthData.getID()))
+    private void setReadMessages(List<SockMessage> messages) {
+        List<SockMessage> readMessages = new ArrayList<>();
+        for (SockMessage m : messages)
+            if(m.status!=null && !m.user_id.equals(AuthData.getID())) {
                     readMessages.add(m);
             }
             else
@@ -362,17 +372,22 @@ public class DialogActivity extends BaseActivity implements MessageView {
     }
 
     @Override
-    public void newMessage(Message message) {
-        if (user_ids.contains(message.sender)|| message.sender.equals(AuthData.getID())) {
-            adapter.newMessage(message);
-            scrollBot();
-            if (AuthData.notEqualId(message.sender))
+    public void newMessage(SockMessage message) {
+        /*
+        if (user_ids.contains(message.user_id)|| message.user_id.equals(AuthData.getID())) {
+            //
+            if (AuthData.notEqualId(message.user_id))
                 presenter.readMessages(Collections.singletonList(message));
         }
+
+         */
+
+        adapter.newMessage(message);
+        scrollBot();
     }
 
     @Override
-    public void updateMessage(Message message) {
+    public void updateMessage(SockMessage message) {
         adapter.update(message);
     }
 
@@ -385,9 +400,9 @@ public class DialogActivity extends BaseActivity implements MessageView {
     public void play(int time, int maxTime) {
 //        if(presenter.isPlaying())
 //            presenter.stopPlay();
-        adapter.setProgressPlay(time, maxTime);
-        if (time==maxTime)
-            new Handler().postDelayed(() -> adapter.setProgressPlay(-1, 0),maxTime*1000);
+//        adapter.setProgressPlay(time, maxTime);
+//        if (time==maxTime)
+//            new Handler().postDelayed(() -> adapter.setProgressPlay(-1, 0),maxTime*1000);
 
     }
 

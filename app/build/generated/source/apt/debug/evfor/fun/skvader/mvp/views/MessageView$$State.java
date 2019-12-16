@@ -12,22 +12,6 @@ import com.arellomobile.mvp.viewstate.strategy.StateStrategy;
 public class MessageView$$State extends MvpViewState<evfor.fun.skvader.mvp.views.MessageView> implements evfor.fun.skvader.mvp.views.MessageView {
 
 	@Override
-	public  void loadMessage( java.util.List<evfor.fun.skvader.models.Message> messages) {
-		LoadMessageCommand loadMessageCommand = new LoadMessageCommand(messages);
-		mViewCommands.beforeApply(loadMessageCommand);
-
-		if (mViews == null || mViews.isEmpty()) {
-			return;
-		}
-
-		for(evfor.fun.skvader.mvp.views.MessageView view : mViews) {
-			view.loadMessage(messages);
-		}
-
-		mViewCommands.afterApply(loadMessageCommand);
-	}
-
-	@Override
 	public  void setTitle( java.lang.String eventName) {
 		SetTitleCommand setTitleCommand = new SetTitleCommand(eventName);
 		mViewCommands.beforeApply(setTitleCommand);
@@ -60,7 +44,7 @@ public class MessageView$$State extends MvpViewState<evfor.fun.skvader.mvp.views
 	}
 
 	@Override
-	public  void newMessage( evfor.fun.skvader.models.Message message) {
+	public  void newMessage( evfor.fun.skvader.models.SockMessage message) {
 		NewMessageCommand newMessageCommand = new NewMessageCommand(message);
 		mViewCommands.beforeApply(newMessageCommand);
 
@@ -76,7 +60,7 @@ public class MessageView$$State extends MvpViewState<evfor.fun.skvader.mvp.views
 	}
 
 	@Override
-	public  void updateMessage( evfor.fun.skvader.models.Message message) {
+	public  void updateMessage( evfor.fun.skvader.models.SockMessage message) {
 		UpdateMessageCommand updateMessageCommand = new UpdateMessageCommand(message);
 		mViewCommands.beforeApply(updateMessageCommand);
 
@@ -284,20 +268,6 @@ public class MessageView$$State extends MvpViewState<evfor.fun.skvader.mvp.views
 	}
 
 
-	public class LoadMessageCommand extends ViewCommand<evfor.fun.skvader.mvp.views.MessageView> {
-		public final java.util.List<evfor.fun.skvader.models.Message> messages;
-
-		LoadMessageCommand( java.util.List<evfor.fun.skvader.models.Message> messages) {
-			super("loadMessage", com.arellomobile.mvp.viewstate.strategy.AddToEndStrategy.class);
-			this.messages = messages;
-		}
-
-		@Override
-		public void apply(evfor.fun.skvader.mvp.views.MessageView mvpView) {
-			mvpView.loadMessage(messages);
-		}
-	}
-
 	public class SetTitleCommand extends ViewCommand<evfor.fun.skvader.mvp.views.MessageView> {
 		public final java.lang.String eventName;
 
@@ -327,9 +297,9 @@ public class MessageView$$State extends MvpViewState<evfor.fun.skvader.mvp.views
 	}
 
 	public class NewMessageCommand extends ViewCommand<evfor.fun.skvader.mvp.views.MessageView> {
-		public final evfor.fun.skvader.models.Message message;
+		public final evfor.fun.skvader.models.SockMessage message;
 
-		NewMessageCommand( evfor.fun.skvader.models.Message message) {
+		NewMessageCommand( evfor.fun.skvader.models.SockMessage message) {
 			super("newMessage", com.arellomobile.mvp.viewstate.strategy.AddToEndStrategy.class);
 			this.message = message;
 		}
@@ -341,9 +311,9 @@ public class MessageView$$State extends MvpViewState<evfor.fun.skvader.mvp.views
 	}
 
 	public class UpdateMessageCommand extends ViewCommand<evfor.fun.skvader.mvp.views.MessageView> {
-		public final evfor.fun.skvader.models.Message message;
+		public final evfor.fun.skvader.models.SockMessage message;
 
-		UpdateMessageCommand( evfor.fun.skvader.models.Message message) {
+		UpdateMessageCommand( evfor.fun.skvader.models.SockMessage message) {
 			super("updateMessage", com.arellomobile.mvp.viewstate.strategy.AddToEndStrategy.class);
 			this.message = message;
 		}
