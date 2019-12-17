@@ -7,9 +7,20 @@ public class SockMessage {
     public int playProgress = 0;
     public int maxProgress = 0;
 
-    public boolean fromMe() {
-        return true;
+
+    public SockMessage(String message, SockMessage.Type text) {
+        this.text = message;
+        this.type = text;
     }
+
+    public SockMessage() {
+
+    }
+
+    public SockMessage(String valueOf) {
+        this.photo = valueOf;
+    }
+
 
     public boolean notHasUser() {
         return name == null || name.isEmpty();
@@ -46,6 +57,12 @@ public class SockMessage {
 
     @SerializedName("text")
     public String text;
+
+    @SerializedName("photo")
+    public String photo;
+
+    @SerializedName("voice")
+    public String voice;
 
     public SockMessage.Type type;
 

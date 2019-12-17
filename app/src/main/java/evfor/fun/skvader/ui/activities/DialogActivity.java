@@ -3,6 +3,8 @@ package evfor.fun.skvader.ui.activities;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,6 +12,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.RecyclerView;
+import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -43,9 +46,11 @@ import evfor.fun.skvader.ui.utils.RecyclerUtils;
 import evfor.fun.skvader.utils.ImageLoader;
 import evfor.fun.skvader.utils.RealPathUtil;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -68,6 +73,9 @@ public class DialogActivity extends BaseActivity implements MessageView {
     InputPanelHolder inputPanelHolder;
     List<User> users;
     List<String> user_ids = new ArrayList<>();
+
+    List<SockMessage> mess;
+
     private MessageAdapter adapter;
     private ImageView ava, ava1, ava2;
     public static boolean isNeedToConnect = true;
@@ -92,7 +100,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
         context.startActivity(new Intent(context, DialogActivity.class)
                 .putExtra(ActId.TAG, actId)
                 .putExtra("room", actId.room_id)
-                .putExtra("name",name)
+                .putExtra("name", name==null?actId.title: name)
                 .putExtra("id",id));
     }
 
@@ -108,17 +116,24 @@ public class DialogActivity extends BaseActivity implements MessageView {
 
             Gson gson = new GsonBuilder().create();
             String bs = args[0].toString();
-            SockMessages mess = gson.fromJson(args[0].toString(),SockMessages.class);
+            SockMessages newMess = gson.fromJson(args[0].toString(), SockMessages.class);
+            if(mess == null){
+                mess = new ArrayList<>();
+            }
+            for (int i = 0; i < newMess.size(); i++){
+                mess.add(newMess.messages.get(i));
+            }
             if(mess != null) {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Log.i("logs", mess.messages.toString());
-                        adapter.setMessages(mess.messages);
+                        Log.i("logs", mess.toString());
+                        adapter.setMessages(mess);
+                        scrollBot();
                     }
                 });
 
-               setReadMessages(mess.messages);
+               //setReadMessages(mess);
             }
 
         }
@@ -137,13 +152,13 @@ public class DialogActivity extends BaseActivity implements MessageView {
         }
         if(socketChat.getChat() != null) {
             socketChat.getChat().emit("joinToRoom", chObj).on("message", new NewMessage());
-        }
-        RecyclerUtils.setMessageList(dialogMessageList, adapter);
-        //inputPanel.setVisibility(View.GONE);
-        inputPanelHolder = new InputPanelHolder(inputPanel);
-        inputPanelHolder.setWriting()
-                .subscribe(v -> presenter.write());
-        dialogMessageList.getItemAnimator().setChangeDuration(0);
+
+            RecyclerUtils.setMessageList(dialogMessageList, adapter);
+            inputPanel.setVisibility(View.VISIBLE);
+            inputPanelHolder = new InputPanelHolder(inputPanel);
+            inputPanelHolder.setWriting()
+                    .subscribe(v -> socketChat.getChat().emit("writes"  , chObj));
+            dialogMessageList.getItemAnimator().setChangeDuration(0);
         /*
         adapter = new MessageAdapter();
 
@@ -151,8 +166,9 @@ public class DialogActivity extends BaseActivity implements MessageView {
         adapter.setOnPlay(presenter::play);
         adapter.setOnPause(presenter::pausePlay);
         */
-        //showLoad();
-        //hideLoad();
+            //showLoad();
+            //hideLoad();
+        }
     }
 
     @Override
@@ -169,9 +185,8 @@ public class DialogActivity extends BaseActivity implements MessageView {
         if (extras.containsKey("id"))
             user_ids.add(extras.getString("id"));
         if (extras.containsKey(ActId.TAG)) {
-//            adapter.isGeneral();
+            adapter.isGeneral();
             act =(ActId) extras.getSerializable(ActId.TAG);
-
             presenter.loadUsers((ActId) extras.getSerializable(ActId.TAG));
         } else if (extras.containsKey(ID)) {
             presenter.loadUser(getIntent().getStringExtra(ID));
@@ -259,6 +274,25 @@ public class DialogActivity extends BaseActivity implements MessageView {
         ).show();
     }
 
+    @OnClick(R.id.dialog_send_button)
+    public void onSendMessage() {
+        SocketChat socketChat = SocketChat.getInstance();
+        int room = getIntent().getIntExtra("room", 0);
+
+        JSONObject chObj = new JSONObject();
+        try {
+            chObj.put("roomId", room);
+            chObj.put("text" , inputPanelHolder.getMessage());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        if(socketChat.getChat() != null) {
+            socketChat.getChat().emit("message", chObj);
+        }
+        inputPanelHolder.claerMessage();
+    }
+
     private void takeFromGallery() {
         takeAndSendPhoto(OpenPhotoActivity.open(this, true));
     }
@@ -268,32 +302,55 @@ public class DialogActivity extends BaseActivity implements MessageView {
     }
 
     private void takeAndSendPhoto(Maybe<Uri> maybe) {
-        /*maybe
+        maybe
                 .map(this::newImageMessage)
                 .subscribe(this::sendImageMessage,
                         throwable -> {
                             DialogProvider.infoOk(this, throwable.getMessage()).show();
                             throwable.printStackTrace();
-                        });*/
+                        });
     }
 
     private void sendImageMessage(SockMessage m) {
-        newMessage(m);
-        //presenter.sendPhoto(RealPathUtil.getRealPath(this, Uri.parse(m.text)), m.updateId);
+        String photo = getFileToByte(RealPathUtil.getRealPath(this, Uri.parse(m.photo)));
+        SocketChat socketChat = SocketChat.getInstance();
+        int room = getIntent().getIntExtra("room", 0);
+
+        JSONObject chObj = new JSONObject();
+        try {
+            chObj.put("roomId", room);
+            chObj.put("photo" , photo);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        if(socketChat.getChat() != null) {
+            socketChat.getChat().emit("message", chObj);
+        }
+
     }
 
-    private Message newImageMessage(Uri uri) {
-        Message m = new Message(String.valueOf(uri), Message.Type.IMAGE);
-        m.updateId = presenter.createId();
+    public static String getFileToByte(String filePath){
+        Bitmap bmp = null;
+        ByteArrayOutputStream bos = null;
+        byte[] bt = null;
+        String encodeString = null;
+        try{
+            bmp = BitmapFactory.decodeFile(filePath);
+            bos = new ByteArrayOutputStream();
+            bmp.compress(Bitmap.CompressFormat.JPEG, 100, bos);
+            bt = bos.toByteArray();
+            encodeString = Base64.encodeToString(bt, Base64.DEFAULT);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return "data:image/jpeg;base64," + encodeString;
+    }
+    private SockMessage newImageMessage(Uri uri) {
+        SockMessage m = new SockMessage(String.valueOf(uri));
         return m;
     }
 
-    private void sendTextMessage(String message) {
-        Message m = new Message(message, Message.Type.TEXT);
-        m.updateId = presenter.createId();
-        //newMessage(m);
-        presenter.sendMessage(message, m.updateId);
-    }
 /*
     @Override
     public void loadMessage(List<SockMessage> messages) {
@@ -321,20 +378,10 @@ public class DialogActivity extends BaseActivity implements MessageView {
     }
 */
     private void scrollBot() {
+        if(dialogMessageList != null)
         dialogMessageList.scrollToPosition(dialogMessageList.getAdapter().getItemCount() - 1);
     }
 
-    private void setReadMessages(List<SockMessage> messages) {
-        List<SockMessage> readMessages = new ArrayList<>();
-        for (SockMessage m : messages)
-            if(m.status!=null && !m.user_id.equals(AuthData.getID())) {
-                    readMessages.add(m);
-            }
-            else
-                readMessages.add(m);
-        if (!readMessages.isEmpty())
-            presenter.readMessages(readMessages);
-    }
 
     @Override
     public void loadUser(User user) {
@@ -373,14 +420,6 @@ public class DialogActivity extends BaseActivity implements MessageView {
 
     @Override
     public void newMessage(SockMessage message) {
-        /*
-        if (user_ids.contains(message.user_id)|| message.user_id.equals(AuthData.getID())) {
-            //
-            if (AuthData.notEqualId(message.user_id))
-                presenter.readMessages(Collections.singletonList(message));
-        }
-
-         */
 
         adapter.newMessage(message);
         scrollBot();
@@ -417,7 +456,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
     @Override
     protected void onPause() {
         super.onPause();
-        //presenter.stopPlay();
+        presenter.stopPlay();
     }
 
     @Override

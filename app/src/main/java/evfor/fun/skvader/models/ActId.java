@@ -8,6 +8,7 @@ public class ActId implements Identified, Serializable {
     public static final String TAG = ActId.class.getSimpleName();
 
     public String id = "";
+    public String title = "";
     public boolean isEvent;
     public Integer room_id;
 
@@ -24,6 +25,7 @@ public class ActId implements Identified, Serializable {
         this.id = id;
         this.isEvent = isEvent;
         this.room_id = Integer.valueOf(room_id);
+
     }
 
     @Override

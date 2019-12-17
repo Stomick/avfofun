@@ -12,12 +12,12 @@
         "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_edit_1.png"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_info.png.flat",
-        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_info.png"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable_flag_pr.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\country-picker-android-1.2.0.aar\\6540f0b1fa0047c138a6ac65de3b0a73\\res\\drawable\\flag_pr.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_info.png.flat",
+        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_info.png"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_progress.xml.flat",
@@ -48,12 +48,12 @@
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-common-4.36.0.aar\\ea56a7aeb599c49d09e6e2881ba18734\\res\\drawable\\com_facebook_auth_dialog_background.xml"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mrb_star_border_icon_black_36dp.png.flat",
-        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\library-1.3.1.aar\\6f3b07dcc580dadf6997c5507bdd373c\\res\\drawable-xhdpi-v4\\mrb_star_border_icon_black_36dp.png"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mrb_star_border_icon_black_36dp.png.flat",
+        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\library-1.3.1.aar\\6f3b07dcc580dadf6997c5507bdd373c\\res\\drawable-xhdpi-v4\\mrb_star_border_icon_black_36dp.png"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\menu_crop_image_menu.xml.flat",
@@ -72,32 +72,32 @@
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
-        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable_flag_ni.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\country-picker-android-1.2.0.aar\\6540f0b1fa0047c138a6ac65de3b0a73\\res\\drawable\\flag_ni.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
+        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
-        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_launcher.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\library-1.0.2.aar\\32cb08876c7cbc8e07dde086062d48b2\\res\\drawable-mdpi-v4\\ic_launcher.png"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_create_event.xml.flat",
-        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\layout\\fragment_create_event.xml"
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_attach_file.png.flat",
         "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_attach_file.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_create_event.xml.flat",
+        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\layout\\fragment_create_event.xml"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable_flag_kp.png.flat",
@@ -124,20 +124,20 @@
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0d479b79492722bdda1084553c384f1a\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_vk.png.flat",
-        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-xhdpi\\ic_vk.png"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable_flag_sz.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\country-picker-android-1.2.0.aar\\6540f0b1fa0047c138a6ac65de3b0a73\\res\\drawable\\flag_sz.png"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0d479b79492722bdda1084553c384f1a\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_vk.png.flat",
+        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-xhdpi\\ic_vk.png"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_ab_app.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\androidsdk-1.6.9.aar\\41e042358a70ceeaacc88dfae1db8673\\res\\drawable-xxxhdpi-v4\\ic_ab_app.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\0d479b79492722bdda1084553c384f1a\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_dialog_bg.png.flat",
@@ -232,12 +232,12 @@
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\country-picker-android-1.2.0.aar\\6540f0b1fa0047c138a6ac65de3b0a73\\res\\drawable\\flag_de.png"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\layout_reg_step4.xml.flat",
-        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\layout\\reg_step4.xml"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\7865dc0cf526bfa4d8c4b12538bb72cf\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\layout_reg_step4.xml.flat",
+        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\layout\\reg_step4.xml"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -276,24 +276,24 @@
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-login-4.36.0.aar\\0fa3cceb3f788823cc2181edf3158a55\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
-        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
+        "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_load_photo.png.flat",
-        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-mdpi\\load_photo.png"
-    },
-    {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\DimonChuvachok\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\c9a1e8d8e0658c7f719e8462ad8aa2d1\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_load_photo.png.flat",
+        "source": "C:\\stom\\avfofun\\app\\src\\main\\res\\drawable-mdpi\\load_photo.png"
     },
     {
         "merged": "C:\\stom\\avfofun\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",

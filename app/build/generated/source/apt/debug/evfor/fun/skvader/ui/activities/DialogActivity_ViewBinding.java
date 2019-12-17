@@ -17,6 +17,8 @@ public class DialogActivity_ViewBinding implements Unbinder {
 
   private View view2131361998;
 
+  private View view2131362002;
+
   @UiThread
   public DialogActivity_ViewBinding(DialogActivity target) {
     this(target, target.getWindow().getDecorView());
@@ -37,6 +39,14 @@ public class DialogActivity_ViewBinding implements Unbinder {
         target.onDialogAttachButtonClicked();
       }
     });
+    view = Utils.findRequiredView(source, R.id.dialog_send_button, "method 'onSendMessage'");
+    view2131362002 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onSendMessage();
+      }
+    });
   }
 
   @Override
@@ -51,5 +61,7 @@ public class DialogActivity_ViewBinding implements Unbinder {
 
     view2131361998.setOnClickListener(null);
     view2131361998 = null;
+    view2131362002.setOnClickListener(null);
+    view2131362002 = null;
   }
 }

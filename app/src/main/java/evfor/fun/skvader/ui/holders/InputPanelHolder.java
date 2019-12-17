@@ -60,6 +60,13 @@ public class InputPanelHolder {
     public void setSendMessage(CallBack1<String> sendMessage) {
         this.sendMessage = sendMessage;
     }
+    public String getMessage(){
+        return dialogEditText.getText().toString();
+    }
+
+    public void claerMessage(){
+         dialogEditText.setText("");
+    }
 
     public boolean isFocusedET() {
         return dialogEditText.isFocused();

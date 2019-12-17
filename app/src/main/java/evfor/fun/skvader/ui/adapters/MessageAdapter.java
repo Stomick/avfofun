@@ -99,17 +99,13 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
     public int getItemViewType(int position) {
 
         SockMessage message = messages.get(position);
-/*
-        switch (message.type) {
-            case TEXT:
+
+        if(message.text != null)
                 return R.layout.message_text;
-            case IMAGE:
+        else if(message.photo!= null)
                 return R.layout.message_image;
-            case VOICE:
+        else if(message.voice!= null)
                 return R.layout.message_voice;
-            case WRITE:
-                return R.layout.message_writing;
-        }*/
         return R.layout.message_text;
     }
 
@@ -206,10 +202,8 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
 
         private void setStatus(SockMessage message) {
             if (message.status != null && AuthData.equalId(message.user_id)) {
-                if(message.status !=0) {
-                        status.setText(itemView.getContext().getResources().getString(R.string.delivered));
-                        bg.setBackgroundResource(R.drawable.message_bg_fromme);
-                }
+                status.setText(itemView.getContext().getResources().getString(R.string.delivered));
+                bg.setBackgroundResource(R.drawable.message_bg_fromme);
                 status.setVisibility(View.VISIBLE);
             } else {
                 status.setVisibility(View.GONE);
@@ -241,7 +235,9 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
         @Override
         void bind(int pos) {
             super.bind(pos);
-            textView.setText(messages.get(pos).text);
+            if(!AuthData.equalId(messages.get(pos).user_id))
+                textView.setTextColor(Color.BLACK);
+            textView.setText(htmlShow(messages.get(pos).text));
         }
 
         private Spanned htmlShow(String htmlAsString) {
@@ -272,14 +268,14 @@ public class MessageAdapter extends BaseAdapter<MessageAdapter.BaseViewHolder> {
                 imageView.setMaxWidth(maxW);
             imageView.setOnClickListener(
                     view ->
-                            PhotoViewActivity.openImage(view.getContext(), messages.get(getAdapterPosition()).text));
+                            PhotoViewActivity.openImage(view.getContext(), messages.get(getAdapterPosition()).photo));
         }
 
         @Override
         void bind(int pos) {
             super.bind(pos);
             ImageLoader.clearCashUrl(messages.get(pos).text);
-            ImageLoader.loadImage(messages.get(pos).text, imageView);
+            ImageLoader.loadImage(messages.get(pos).photo, imageView);
         }
     }
 
