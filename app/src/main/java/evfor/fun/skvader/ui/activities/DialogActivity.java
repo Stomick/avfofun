@@ -63,8 +63,10 @@ import io.socket.emitter.Emitter;
 public class DialogActivity extends BaseActivity implements MessageView {
 
     private static final String ID = "id";
-    public int room_id;
-    private String title;
+    private static String userTo = null;
+    private static String roomType = "event";
+    private static int room_id = 0;
+    private static String title = null;
     @InjectPresenter
     DialogPresenter presenter;
 
@@ -86,22 +88,32 @@ public class DialogActivity extends BaseActivity implements MessageView {
 
     public static void openDialog(Context context, String userID) {
         Intent i = intent(context, userID);
-        if (i != null)
+        if (i != null) {
+            userTo = userID;
+            roomType = "user";
             context.startActivity(i);
+        }
     }
 
     public static Intent intent(Context context, String userID) {
-        if (AuthData.notEqualId(userID))
+        if (AuthData.notEqualId(userID)) {
+            userTo = userID;
             return new Intent(context, DialogActivity.class)
                     .putExtra(ID, userID);
+        }
         else return null;
     }
 
     public static void openChat(Context context, ActId actId, String name, String id) {
-
+        if(actId.isEvent){
+            roomType = "event";
+        }else {
+            roomType = "community";
+        }
+        room_id = actId.room_id;
+        title = name;
         context.startActivity(new Intent(context, DialogActivity.class)
                 .putExtra(ActId.TAG, actId)
-                .putExtra("room", actId.room_id)
                 .putExtra("name", name)
                 .putExtra("id", id));
     }
@@ -162,12 +174,10 @@ public class DialogActivity extends BaseActivity implements MessageView {
         SocketChat socketChat = SocketChat.getInstance();
         JSONObject chObj = new JSONObject();
 
-        room_id = getIntent().getIntExtra("room", 0);
-        if (room_id == 0) {
-            String userTo = getIntent().getStringExtra("id");
-
+        if (roomType == "user") {
             try {
                 chObj.put("userTo", userTo);
+                chObj.put("type", roomType);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -178,13 +188,13 @@ public class DialogActivity extends BaseActivity implements MessageView {
             title = getIntent().getStringExtra("name");
         }
 
-        try {
-            chObj.put("roomId", room_id);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
 
         if (socketChat.getChat() != null) {
+            try {
+                chObj.put("roomId", room_id);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             socketChat.getChat().emit("joinToRoom", chObj).on("message", new NewMessage());
 
             RecyclerUtils.setMessageList(dialogMessageList, adapter);
@@ -314,11 +324,10 @@ public class DialogActivity extends BaseActivity implements MessageView {
     @OnClick(R.id.dialog_send_button)
     public void onSendMessage() {
         SocketChat socketChat = SocketChat.getInstance();
-        int room = getIntent().getIntExtra("room", 0);
 
         JSONObject chObj = new JSONObject();
         try {
-            chObj.put("roomId", room);
+            chObj.put("roomId", room_id);
             chObj.put("text", inputPanelHolder.getMessage());
         } catch (JSONException e) {
             e.printStackTrace();
@@ -351,11 +360,10 @@ public class DialogActivity extends BaseActivity implements MessageView {
     private void sendImageMessage(SockMessage m) {
         String photo = getFileToByte(RealPathUtil.getRealPath(this, Uri.parse(m.photo)));
         SocketChat socketChat = SocketChat.getInstance();
-        int room = getIntent().getIntExtra("room", 0);
 
         JSONObject chObj = new JSONObject();
         try {
-            chObj.put("roomId", room);
+            chObj.put("roomId", room_id);
             chObj.put("photo", photo);
         } catch (JSONException e) {
             e.printStackTrace();
@@ -507,7 +515,18 @@ public class DialogActivity extends BaseActivity implements MessageView {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        isNeedToConnect = false;
-        presenter.socketDisconnect();
+        SocketChat socketChat = SocketChat.getInstance();
+        if(socketChat.getChat() != null){
+            JSONObject chObj = new JSONObject();
+
+                try {
+                    chObj.put("roomId", room_id);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            socketChat.getChat().emit("leaveFromRoom", chObj);
+        }
+        //isNeedToConnect = false;
+        //presenter.socketDisconnect();
     }
 }
