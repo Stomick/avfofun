@@ -8,7 +8,6 @@ public class ActId implements Identified, Serializable {
     public static final String TAG = ActId.class.getSimpleName();
 
     public String id = "";
-    public String title = "";
     public boolean isEvent;
     public Integer room_id;
 

@@ -425,7 +425,7 @@ public class EventActivity extends BaseActivity implements EventView {
             DialogActivity.openChat(this, actId,s,user_creator.id() );
         }
         else
-            DialogActivity.openChat(this, actId,actId.title,null );
+            DialogActivity.openChat(this, actId, String.valueOf(eventTitle.getText()),null );
     }
 
     @Override

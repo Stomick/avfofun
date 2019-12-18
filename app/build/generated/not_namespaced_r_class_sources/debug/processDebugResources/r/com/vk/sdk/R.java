@@ -12,18 +12,18 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int vk_black = 0x7f06019f;
-        public static final int vk_black_pressed = 0x7f0601a0;
-        public static final int vk_clear = 0x7f0601a1;
-        public static final int vk_color = 0x7f0601a2;
-        public static final int vk_grey_color = 0x7f0601a3;
-        public static final int vk_light_color = 0x7f0601a4;
-        public static final int vk_share_blue_color = 0x7f0601a5;
-        public static final int vk_share_gray_line = 0x7f0601a6;
-        public static final int vk_share_link_color = 0x7f0601a7;
-        public static final int vk_share_link_title_color = 0x7f0601a8;
-        public static final int vk_share_top_blue_color = 0x7f0601a9;
-        public static final int vk_white = 0x7f0601aa;
+        public static final int vk_black = 0x7f06019b;
+        public static final int vk_black_pressed = 0x7f06019c;
+        public static final int vk_clear = 0x7f06019d;
+        public static final int vk_color = 0x7f06019e;
+        public static final int vk_grey_color = 0x7f06019f;
+        public static final int vk_light_color = 0x7f0601a0;
+        public static final int vk_share_blue_color = 0x7f0601a1;
+        public static final int vk_share_gray_line = 0x7f0601a2;
+        public static final int vk_share_link_color = 0x7f0601a3;
+        public static final int vk_share_link_title_color = 0x7f0601a4;
+        public static final int vk_share_top_blue_color = 0x7f0601a5;
+        public static final int vk_white = 0x7f0601a6;
     }
     public static final class dimen {
         private dimen() {}
@@ -48,11 +48,11 @@ public final class R {
         private drawable() {}
 
         public static final int bg_toolbar_shadow_dark = 0x7f080062;
-        public static final int ic_ab_app = 0x7f0801a6;
-        public static final int ic_close_white_24dp = 0x7f0801b6;
-        public static final int vk_clear_shape = 0x7f080217;
-        public static final int vk_gray_transparent_shape = 0x7f080218;
-        public static final int vk_share_send_button_background = 0x7f080219;
+        public static final int ic_ab_app = 0x7f0801a1;
+        public static final int ic_close_white_24dp = 0x7f0801b1;
+        public static final int vk_clear_shape = 0x7f080212;
+        public static final int vk_gray_transparent_shape = 0x7f080213;
+        public static final int vk_share_send_button_background = 0x7f080214;
     }
     public static final class id {
         private id() {}

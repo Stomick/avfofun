@@ -15,11 +15,11 @@ public class FacebookProfileTask implements FieldProfileTask {
 
     public static String[] permissions() {
         return new String[]{
-                EMAIL,
+                EMAIL,/*
                 "user_" + BDAY,
                 "user_" + GENDER,
                 "user_" + HTOWN,
-                "user_" + LOCATION
+                "user_" + LOCATION*/
         };
     }
 

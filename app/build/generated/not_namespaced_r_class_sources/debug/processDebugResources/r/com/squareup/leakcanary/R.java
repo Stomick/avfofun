@@ -12,9 +12,9 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int leak_canary_icon = 0x7f0801e7;
-        public static final int leak_canary_notification = 0x7f0801e8;
-        public static final int leak_canary_toast_background = 0x7f0801e9;
+        public static final int leak_canary_icon = 0x7f0801e2;
+        public static final int leak_canary_notification = 0x7f0801e3;
+        public static final int leak_canary_toast_background = 0x7f0801e4;
     }
     public static final class id {
         private id() {}
@@ -67,7 +67,7 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static final int leak_canary_LeakCanary_Base = 0x7f1001ad;
-        public static final int leak_canary_Theme_Transparent = 0x7f1001ae;
+        public static final int leak_canary_LeakCanary_Base = 0x7f1001ac;
+        public static final int leak_canary_Theme_Transparent = 0x7f1001ad;
     }
 }

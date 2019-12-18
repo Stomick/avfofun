@@ -88,7 +88,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:15.0.2'
     implementation 'com.google.firebase:firebase-messaging:15.0.2'
     //FB
-    implementation 'com.facebook.android:facebook-android-sdk:4.36.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
     //VK
     implementation 'com.vk:androidsdk:1.6.9'
 

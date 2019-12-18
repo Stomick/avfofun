@@ -138,6 +138,7 @@ public class EventPresenter extends BasePresenter<EventView> {
     }
 
     private void setGoButtonStatus(Act act) {
+
         if (act.enterStatus != null && AuthData.notEqualId(act.user_id)) {
             if (act.getStatus() == ActStatus.BLOCKED) {
                 getViewState().blocked();

@@ -42,6 +42,7 @@ import evfor.fun.skvader.ui.adapters.MessageAdapter;
 import evfor.fun.skvader.ui.dialogs.DialogProvider;
 import evfor.fun.skvader.ui.dialogs.Toaster;
 import evfor.fun.skvader.ui.holders.InputPanelHolder;
+import evfor.fun.skvader.ui.models.ChatRoom;
 import evfor.fun.skvader.ui.utils.RecyclerUtils;
 import evfor.fun.skvader.utils.ImageLoader;
 import evfor.fun.skvader.utils.RealPathUtil;
@@ -62,7 +63,8 @@ import io.socket.emitter.Emitter;
 public class DialogActivity extends BaseActivity implements MessageView {
 
     private static final String ID = "id";
-    public String room_id;
+    public int room_id;
+    private String title;
     @InjectPresenter
     DialogPresenter presenter;
 
@@ -95,13 +97,13 @@ public class DialogActivity extends BaseActivity implements MessageView {
         else return null;
     }
 
-    public static void openChat(Context context, ActId actId,String name,String id) {
+    public static void openChat(Context context, ActId actId, String name, String id) {
 
         context.startActivity(new Intent(context, DialogActivity.class)
                 .putExtra(ActId.TAG, actId)
                 .putExtra("room", actId.room_id)
-                .putExtra("name", name==null?actId.title: name)
-                .putExtra("id",id));
+                .putExtra("name", name)
+                .putExtra("id", id));
     }
 
     @Override
@@ -117,13 +119,13 @@ public class DialogActivity extends BaseActivity implements MessageView {
             Gson gson = new GsonBuilder().create();
             String bs = args[0].toString();
             SockMessages newMess = gson.fromJson(args[0].toString(), SockMessages.class);
-            if(mess == null){
+            if (mess == null) {
                 mess = new ArrayList<>();
             }
-            for (int i = 0; i < newMess.size(); i++){
+            for (int i = 0; i < newMess.size(); i++) {
                 mess.add(newMess.messages.get(i));
             }
-            if(mess != null) {
+            if (mess != null) {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -133,31 +135,63 @@ public class DialogActivity extends BaseActivity implements MessageView {
                     }
                 });
 
-               //setReadMessages(mess);
+                //setReadMessages(mess);
             }
 
         }
 
     }
+
+    class GetRoom implements Emitter.Listener {
+
+        @Override
+        public void call(Object... args) {
+
+            Gson gson = new GsonBuilder().create();
+            String bs = args[0].toString();
+            ChatRoom chatRoom = gson.fromJson(args[0].toString(), ChatRoom.class);
+            room_id = chatRoom.roomId;
+            title = chatRoom.name;
+        }
+
+    }
+
     @Override
     protected void initViews(@Nullable Bundle savedInstanceState) {
         adapter = new MessageAdapter();
-        int room = getIntent().getIntExtra("room", 0);
         SocketChat socketChat = SocketChat.getInstance();
         JSONObject chObj = new JSONObject();
+
+        room_id = getIntent().getIntExtra("room", 0);
+        if (room_id == 0) {
+            String userTo = getIntent().getStringExtra("id");
+
+            try {
+                chObj.put("userTo", userTo);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            socketChat.getChat().emit("getRoom", chObj).on("getRoom", new GetRoom());
+        }
+
+        if(title==null){
+            title = getIntent().getStringExtra("name");
+        }
+
         try {
-            chObj.put("roomId", room);
+            chObj.put("roomId", room_id);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        if(socketChat.getChat() != null) {
+
+        if (socketChat.getChat() != null) {
             socketChat.getChat().emit("joinToRoom", chObj).on("message", new NewMessage());
 
             RecyclerUtils.setMessageList(dialogMessageList, adapter);
             inputPanel.setVisibility(View.VISIBLE);
             inputPanelHolder = new InputPanelHolder(inputPanel);
             inputPanelHolder.setWriting()
-                    .subscribe(v -> socketChat.getChat().emit("writes"  , chObj));
+                    .subscribe(v -> socketChat.getChat().emit("writes", chObj));
             dialogMessageList.getItemAnimator().setChangeDuration(0);
         /*
         adapter = new MessageAdapter();
@@ -169,6 +203,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
             //showLoad();
             //hideLoad();
         }
+        setTitle(title);
     }
 
     @Override
@@ -176,7 +211,9 @@ public class DialogActivity extends BaseActivity implements MessageView {
         if (keyboardVisible)
             scrollBot();
     }
+
     ActId act;
+
     private void parseExtras(Bundle extras) {
         if (extras == null)
             return;
@@ -186,7 +223,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
             user_ids.add(extras.getString("id"));
         if (extras.containsKey(ActId.TAG)) {
             adapter.isGeneral();
-            act =(ActId) extras.getSerializable(ActId.TAG);
+            act = (ActId) extras.getSerializable(ActId.TAG);
             presenter.loadUsers((ActId) extras.getSerializable(ActId.TAG));
         } else if (extras.containsKey(ID)) {
             presenter.loadUser(getIntent().getStringExtra(ID));
@@ -282,12 +319,12 @@ public class DialogActivity extends BaseActivity implements MessageView {
         JSONObject chObj = new JSONObject();
         try {
             chObj.put("roomId", room);
-            chObj.put("text" , inputPanelHolder.getMessage());
+            chObj.put("text", inputPanelHolder.getMessage());
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        if(socketChat.getChat() != null) {
+        if (socketChat.getChat() != null) {
             socketChat.getChat().emit("message", chObj);
         }
         inputPanelHolder.claerMessage();
@@ -319,67 +356,68 @@ public class DialogActivity extends BaseActivity implements MessageView {
         JSONObject chObj = new JSONObject();
         try {
             chObj.put("roomId", room);
-            chObj.put("photo" , photo);
+            chObj.put("photo", photo);
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        if(socketChat.getChat() != null) {
+        if (socketChat.getChat() != null) {
             socketChat.getChat().emit("message", chObj);
         }
 
     }
 
-    public static String getFileToByte(String filePath){
+    public static String getFileToByte(String filePath) {
         Bitmap bmp = null;
         ByteArrayOutputStream bos = null;
         byte[] bt = null;
         String encodeString = null;
-        try{
+        try {
             bmp = BitmapFactory.decodeFile(filePath);
             bos = new ByteArrayOutputStream();
             bmp.compress(Bitmap.CompressFormat.JPEG, 100, bos);
             bt = bos.toByteArray();
             encodeString = Base64.encodeToString(bt, Base64.DEFAULT);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return "data:image/jpeg;base64," + encodeString;
     }
+
     private SockMessage newImageMessage(Uri uri) {
         SockMessage m = new SockMessage(String.valueOf(uri));
         return m;
     }
 
-/*
-    @Override
-    public void loadMessage(List<SockMessage> messages) {
-        hideLoad();
-        if (users!=null)
-        for(int i=0;i<messages.size();i++)
-        {
-
-            for (User user:users)
+    /*
+        @Override
+        public void loadMessage(List<SockMessage> messages) {
+            hideLoad();
+            if (users!=null)
+            for(int i=0;i<messages.size();i++)
             {
-                if(messages.get(i).user_id.equals(user.id()))
+
+                for (User user:users)
                 {
-                      messages.get(i).name = user.firstname;
+                    if(messages.get(i).user_id.equals(user.id()))
+                    {
+                          messages.get(i).name = user.firstname;
+                    }
                 }
+
             }
+    //        for(int i=0;i<messages.size();i++) {
+    //            messages.get(i).status = Message.Status.READ;
+    //        }
 
+            adapter.setMessages(messages);
+            scrollBot();
+            setReadMessages(messages);
         }
-//        for(int i=0;i<messages.size();i++) {
-//            messages.get(i).status = Message.Status.READ;
-//        }
-
-        adapter.setMessages(messages);
-        scrollBot();
-        setReadMessages(messages);
-    }
-*/
+    */
     private void scrollBot() {
-        if(dialogMessageList != null)
-        dialogMessageList.scrollToPosition(dialogMessageList.getAdapter().getItemCount() - 1);
+        if (dialogMessageList != null)
+            dialogMessageList.scrollToPosition(dialogMessageList.getAdapter().getItemCount() - 1);
     }
 
 
@@ -402,7 +440,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
     @Override
     public void loadUsers(List<User> chatUsers) {
         users = chatUsers;
-        for(User chat:chatUsers)
+        for (User chat : chatUsers)
             user_ids.add(chat.id());
         if (getSupportActionBar() != null) {
             if (chatUsers.size() > 0)
