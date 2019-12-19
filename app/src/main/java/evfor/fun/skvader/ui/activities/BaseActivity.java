@@ -154,6 +154,7 @@ public abstract class BaseActivity extends MvpAppCompatActivity implements BaseV
     @Override
     public void onBackPressed() {
         progressDialog.close();
+        finish();
         super.onBackPressed();
     }
 }

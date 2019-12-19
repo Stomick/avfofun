@@ -36,7 +36,7 @@ public class NotificationIntent {
             case 19:
                 return SearchActivity.getIntent(context, String.valueOf(objectId), supportField);
             case 15:
-                return DialogActivity.intent(context, String.valueOf(objectId));
+//                return DialogActivity.intent(context, String.valueOf(objectId));
             case 12:
             case 11:
                 return ParticipantsActivity.intentAdmin(context, new ActId(String.valueOf(objectId), isEvent));

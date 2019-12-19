@@ -89,25 +89,32 @@ public class DialogActivity extends BaseActivity implements MessageView {
     public static void openDialog(Context context, String userID) {
         Intent i = intent(context, userID);
         if (i != null) {
-            userTo = userID;
             roomType = "user";
+            SocketChat socketChat = SocketChat.getInstance();
+            JSONObject chObj = new JSONObject();
+
+            try {
+                chObj.put("userTo", userID);
+                chObj.put("type", roomType);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            socketChat.getChat().emit("getRoom", chObj).on("getRoom", new GetRoom());
             context.startActivity(i);
         }
     }
 
     public static Intent intent(Context context, String userID) {
         if (AuthData.notEqualId(userID)) {
-            userTo = userID;
             return new Intent(context, DialogActivity.class)
                     .putExtra(ID, userID);
-        }
-        else return null;
+        } else return null;
     }
 
     public static void openChat(Context context, ActId actId, String name, String id) {
-        if(actId.isEvent){
+        if (actId.isEvent) {
             roomType = "event";
-        }else {
+        } else {
             roomType = "community";
         }
         room_id = actId.room_id;
@@ -154,7 +161,7 @@ public class DialogActivity extends BaseActivity implements MessageView {
 
     }
 
-    class GetRoom implements Emitter.Listener {
+    static class GetRoom implements Emitter.Listener {
 
         @Override
         public void call(Object... args) {
@@ -173,21 +180,6 @@ public class DialogActivity extends BaseActivity implements MessageView {
         adapter = new MessageAdapter();
         SocketChat socketChat = SocketChat.getInstance();
         JSONObject chObj = new JSONObject();
-
-        if (roomType == "user") {
-            try {
-                chObj.put("userTo", userTo);
-                chObj.put("type", roomType);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            socketChat.getChat().emit("getRoom", chObj).on("getRoom", new GetRoom());
-        }
-
-        if(title==null){
-            title = getIntent().getStringExtra("name");
-        }
-
 
         if (socketChat.getChat() != null) {
             try {
@@ -516,17 +508,15 @@ public class DialogActivity extends BaseActivity implements MessageView {
     protected void onDestroy() {
         super.onDestroy();
         SocketChat socketChat = SocketChat.getInstance();
-        if(socketChat.getChat() != null){
+        if (socketChat.getChat() != null) {
             JSONObject chObj = new JSONObject();
 
-                try {
-                    chObj.put("roomId", room_id);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+            try {
+                chObj.put("roomId", room_id);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             socketChat.getChat().emit("leaveFromRoom", chObj);
         }
-        //isNeedToConnect = false;
-        //presenter.socketDisconnect();
     }
 }
